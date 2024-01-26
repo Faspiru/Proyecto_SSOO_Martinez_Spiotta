@@ -25,11 +25,11 @@ public class Main {
         Semaphore mutex = new Semaphore(1);
         Drive drive = new Drive();
         
-        Worker hilo1 = new Worker(0, 3000, drive, mutex);
-        Worker hilo2 = new Worker(1, 3000, drive, mutex);
-        Worker hilo3 = new Worker(2, 3000, drive, mutex);
-        Worker hilo4 = new Worker(3, 3000, drive, mutex);
-        Worker hilo5 = new Worker(4, 3000, drive, mutex);
+        Worker hilo1 = new Worker(0, 3000, 4, drive, mutex);
+        Worker hilo2 = new Worker(1, 3000, 2, drive, mutex);
+        Worker hilo3 = new Worker(2, 3000, 3, drive, mutex);
+        Worker hilo4 = new Worker(3, 3000, 5, drive, mutex);
+        Worker hilo5 = new Worker(4, 3000, 1, drive, mutex);
         
         hilo1.start();
         hilo2.start();
