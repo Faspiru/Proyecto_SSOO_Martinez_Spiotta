@@ -28,6 +28,8 @@ public class Company {
     // de la cantidad de trabajadores de ese TIPO y con eso sacar
     // salarios y partes que tienen que agregar al drive
     
+    // Probando
+    
     public int guionistasCounter;
     public int escenariosCounter;
     public int animadoresCounter;
