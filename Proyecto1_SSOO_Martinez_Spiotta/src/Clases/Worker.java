@@ -18,14 +18,16 @@ public class Worker extends Thread{
     private int type;
     private float salaryAcumulate;
     private int dayDuration;
+    private int cautity;
     private int salary;
     private Drive drive;
     private int dayCounterForSalary;
     private int daysTofinishWork;
     private Semaphore mutex;
 
-    public Worker(int type, int dayDuration, Drive drive, Semaphore mutex) {
+    public Worker(int type, int dayDuration, int cautity, Drive drive, Semaphore mutex) {
         this.type = type;
+        this.cautity = cautity;
         if (this.type == 0) {
             this.salary = 20;
             this.daysTofinishWork = 2; // Este numero deberia venir de la compania
@@ -68,7 +70,7 @@ public class Worker extends Thread{
     }
     
     public void paySalary(){
-        this.setSalaryAcumulate(this.getSalaryAcumulate() + this.getSalary() * 24);
+        this.setSalaryAcumulate(this.getSalaryAcumulate() + ((this.getSalary() * 24)) * this.getCautity());
     }
     
     public void work(){
@@ -76,13 +78,19 @@ public class Worker extends Thread{
         if (this.getDayCounterForSalary() == this.getDaysTofinishWork()){ // ese valor de 2 depende de la compania
             try {
                 this.getMutex().acquire(); //wait
-                this.getDrive().addPart(this.getType());//critica
-                this.getMutex().release();// signal
+                this.getDrive().addPart(this.getType(), this.getCautity()); //critica
+                this.getMutex().release(); // signal
                 this.setDayCounterForSalary(0);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
             }
         }   
+    }
+    
+    public void deleteWorker() {
+        if (this.getCautity() != 1) {
+            this.setCautity(this.cautity - 1);
+        }
     }
 
     /**
@@ -195,6 +203,20 @@ public class Worker extends Thread{
      */
     public void setMutex(Semaphore mutex) {
         this.mutex = mutex;
+    }
+
+    /**
+     * @return the cautity
+     */
+    public int getCautity() {
+        return cautity;
+    }
+
+    /**
+     * @param cautity the cautity to set
+     */
+    public void setCautity(int cautity) {
+        this.cautity = cautity;
     }
     
     

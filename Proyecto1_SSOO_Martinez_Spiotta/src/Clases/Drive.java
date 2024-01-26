@@ -24,25 +24,50 @@ public class Drive {
         this.plotTwists = 0;
     }
     
-    public void addPart(int type) {
+    public void addPart(int type, int cautity) {
         if (type == 0 && this.getGuiones() < 25){
-            this.setGuiones(this.getGuiones() + 1);
+            int calc = this.getGuiones() + (1 * cautity);
+            if (calc < 25) {
+                this.setGuiones(calc);
+            } else {
+                this.setGuiones(25);
+            }
             System.out.println("Guiones disponibles:" + this.getGuiones());
         }
         else if (type == 1 && this.getEscenarios() < 20){
-            this.setEscenarios(this.getEscenarios() + 1);
+            int calc = this.getEscenarios() + (1 * cautity);
+            if (calc < 20) {
+                this.setEscenarios(calc);
+            } else {
+                this.setEscenarios(20);
+            }
             System.out.println("Escenarios disponibles:" + this.getEscenarios());
         }
         else if (type == 2 && this.getAnimaciones() < 55){
-            this.setAnimaciones(this.getAnimaciones() + 3);
+            int calc = this.getAnimaciones() + (3 * cautity);
+            if (calc < 55) {
+                this.setAnimaciones(calc);
+            } else {
+                this.setAnimaciones(55);
+            }
             System.out.println("Animaciones disponibles:" + this.getAnimaciones());
         }
         else if (type == 3 && this.getDoblajes() < 35){
-            this.setDoblajes(this.getDoblajes() + 3);
+            int calc = this.getDoblajes() + (3 * cautity);
+            if (calc < 35) {
+                this.setDoblajes(calc);
+            } else {
+                this.setDoblajes(35);
+            }
             System.out.println("Doblajes disponibles:" + this.getDoblajes());
         }
         else if (type == 4 && this.getPlotTwists() < 10){
-            this.setPlotTwists(this.getPlotTwists() + 1);
+            int calc = this.getPlotTwists() + (1 * cautity);
+            if (calc < 10) {
+                this.setPlotTwists(calc);
+            } else {
+                this.setPlotTwists(10);
+            }
             System.out.println("PlotTwists disponibles:" + this.getPlotTwists());
         }
     }
