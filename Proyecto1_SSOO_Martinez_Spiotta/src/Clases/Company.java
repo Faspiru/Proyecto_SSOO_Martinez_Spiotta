@@ -4,38 +4,124 @@
  */
 package Clases;
 
+import java.util.concurrent.Semaphore;
+
 /**
  *
  * @author fabriziospiotta
  */
 public class Company {
+        
+    private Worker guionistas;
+    private Worker escenarios;
+    private Worker animadores;
+    private Worker dobladores;
+    private Worker guionistasPlotTwists;
+    private Assembler ensambladores;
+    // private Director director;
+    // private PM pm;
+    // private Semaphore mutex2;  Creo que como el pm y el director acceden al deadline, deberia haber un semaforo aparte para eso
     
-    // Supongo que aca deberiamos tener estos counters y aun no se que mas, 
-    // por eso lo deje asi por ahora.
+    private int [] necessities;
+    private int [] daysToFinishWork;
+    private int [] initialQuantity;
+    private int dayDuration;
+    private int chapterPrice;
+    private int ptPrice;
+    private int ganancias;  // No se si tener estos tres atributos aqui o en una clase aparte
+    private int costos;
+    private int utilidad;
     
-    // Yo pienso que aca tambien deben estar los atributos
-    // de lo que se necesita tenerpara un capitulo normal
-    // y uno co plotTwist y tambien aqui crear una instancia
-    // de cada TIPO de trabajador y por parametro la cant de
-    // trabajdores de ese tipo
+    private Semaphore mutex;
+    private Drive drive;
     
-    // Aqui tambien pienso que deberian estar las primitivas para anadir un worker y deletearlo
+    // Atributos de dinero
     
-    // Aqui hay que preguntarle a isaac si hay que crear un trabajador como tal
-    // cada uno es un hilo y cada uno es un worker
-    // o se crea un objeto worker por cada TIPO de trabajador
-    // y trabajar con un atributo dentro de worker que sea un contador
-    // de la cantidad de trabajadores de ese TIPO y con eso sacar
-    // salarios y partes que tienen que agregar al drive
     
-    // Probando
+    public Company(int [] necessities, int [] daysToFinishWork, int [] initialQuantity, int dayDuration, int chapterPrice, int ptPrice){
+        this.necessities = necessities;
+        this.daysToFinishWork = daysToFinishWork;
+        this.initialQuantity = initialQuantity;
+        this.dayDuration = dayDuration;
+        this.ganancias = 0;
+        this.costos = 0;
+        this.utilidad = 0;
+        this.chapterPrice = chapterPrice;
+        this.ptPrice = ptPrice;
+        this.drive = new Drive(necessities);
+        this.mutex = new Semaphore(1);
+        startEmployees();
+    }
     
-    public int guionistasCounter;
-    public int escenariosCounter;
-    public int animadoresCounter;
-    public int dobladoresCounter;
-    public int plotTwistsCounter;
-    public int ensambladoresCounter;
+    public void startEmployees(){
+        guionistas = new Worker(0, dayDuration, initialQuantity[0], drive, mutex, daysToFinishWork);
+        escenarios = new Worker(1, dayDuration, initialQuantity[1], drive, mutex, daysToFinishWork);
+        animadores = new Worker(2, dayDuration, initialQuantity[2], drive, mutex, daysToFinishWork);
+        dobladores = new Worker(3, dayDuration, initialQuantity[3], drive, mutex, daysToFinishWork);
+        guionistasPlotTwists = new Worker(4, dayDuration, initialQuantity[4], drive, mutex, daysToFinishWork);
+        ensambladores = new Assembler(dayDuration, initialQuantity[5], drive, mutex);
+        // director = new Director();
+        // pm = new PM();
+        
+        guionistas.start();
+        escenarios.start();
+        animadores.start();
+        dobladores.start();
+        guionistasPlotTwists.start();
+        ensambladores.start();
+        // director.start();
+        // pm.start();    PM y Director son hilos porque ambos tienen acceso al contador del deadline
+        
+        
+    }
+
+    public Worker getGuionistas() {
+        return guionistas;
+    }
+
+    public Worker getEscenarios() {
+        return escenarios;
+    }
+
+    public Worker getAnimadores() {
+        return animadores;
+    }
+
+    public Worker getDobladores() {
+        return dobladores;
+    }
+
+    public Worker getGuionistasPlotTwists() {
+        return guionistasPlotTwists;
+    }
+
+    public Assembler getEnsambladores() {
+        return ensambladores;
+    }
+
+    public int[] getInitialQuantity() {
+        return initialQuantity;
+    }
+
+    public int getGanancias() {
+        return ganancias;
+    }
+
+    public int getCostos() {
+        return costos;
+    }
+
+    public int getUtilidad() {
+        return utilidad;
+    }
+
+    public Semaphore getMutex() {
+        return mutex;
+    }
+
+    public Drive getDrive() {
+        return drive;
+    }    
 
     
 }
