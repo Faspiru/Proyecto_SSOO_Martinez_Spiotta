@@ -81,8 +81,8 @@ public class Drive {
         check();
     }
     
-    public void addChapter(int quantityWorkers){
-        int quantityChapters = 1;
+    public void addChapter(int quantityAssemblers){
+        int quantityChapters = quantityAssemblers;
         
         // Guiones
         int quantity = calculatePossibleChapters(guiones, 0);
@@ -111,9 +111,11 @@ public class Drive {
         
         // Final
         System.out.println("Cantidad de Capitulos -->" + quantityChapters);
-        if (quantityChapters > quantityWorkers){
-            quantityChapters = quantityWorkers;
+        /*
+        if (quantityChapters > quantityAssemblers){
+            quantityChapters = quantityAssemblers;
         }
+        */
         
         guiones -= (necessities[0]*quantityChapters);
         escenarios -= (necessities[1]*quantityChapters);

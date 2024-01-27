@@ -48,16 +48,18 @@ public class PM extends Thread{
                 long startTime = System.currentTimeMillis();
                 // Ni idea si esto funcione pero es como para simular ese bucle de ver anime y trabajar por las primeras 16 horas
                 while(System.currentTimeMillis() - startTime <= ((24/dayDuration)*16)){
-                    status = "Anime";
+                    status = "Viendo OP";
                     sleep((60/(24/dayDuration))*30);
 
-                    status = "Trabajando";
+                    status = "Revisando";
+                    // check();
                     sleep((60/(24/dayDuration))*30);
                 }
                 
                 // Restantes 8 horas
+                status = "Trabajando";
                 work();
-                
+                sleep((24/dayDuration)*8);
                 System.out.println("Trabajador: PM. Gana: "+this.salaryAcumulate+"$");
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
@@ -78,16 +80,18 @@ public class PM extends Thread{
         } catch (InterruptedException ex) {
             Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        // deadline -= 1;
     }
     
-    public void check(){
-        try {
-            this.mutex.acquire(); //wait
-            // chequea deadline ; //critica
-            this.mutex.release(); // signal
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    public void check(){
+//        try {
+//            this.mutex.acquire(); //wait
+//            // chequea deadline ; //critica
+//            this.mutex.release(); // signal
+//        } catch (InterruptedException ex) {
+//            Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
     
 }

@@ -4,13 +4,16 @@
  */
 package Clases;
 
+import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author fabriziospiotta
  */
-public class Company {
+public class Company extends Thread{
         
     private Worker guionistas;
     private Worker escenarios;
@@ -19,7 +22,7 @@ public class Company {
     private Worker guionistasPlotTwists;
     private Assembler ensambladores;
     // private Director director;
-    // private PM pm;
+    private PM pm;
     // private Semaphore mutex2;  Creo que como el pm y el director acceden al deadline, deberia haber un semaforo aparte para eso
     
     private int [] necessities;
@@ -28,7 +31,7 @@ public class Company {
     private int dayDuration;
     private int chapterPrice;
     private int ptPrice;
-    private int ganancias;  // No se si tener estos tres atributos aqui o en una clase aparte
+    private int ganancias;  // RUN
     private int costos;
     private int utilidad;
     
@@ -74,6 +77,29 @@ public class Company {
         
         
     }
+    
+    
+    @Override
+    public void run(){
+        while(true) {
+            try {
+                /// Funciones
+                sleep(this.dayDuration); // Sleep??
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    
+    
+    /// SI HILO -->
+    /// Funcion cantidad trabajador y tipo (acceder atributos de cada tipo)
+    /// Funcio cantidades de Drive
+    /// Funcion cantidad de capitulos y pt (acceder atributo capitulo y plotwist)
+    /// deadline ??
+    /// Funcion PM y Director status, faltas y descontado (acceder atributo)
+    /// Funcion ganancias, costos, utilidad
+    
 
     public Worker getGuionistas() {
         return guionistas;
