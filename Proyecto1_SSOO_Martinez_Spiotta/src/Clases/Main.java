@@ -24,7 +24,6 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
          try{
             FileReader lector = new FileReader ("DatosIniciales.txt");
             String contenido = "";
