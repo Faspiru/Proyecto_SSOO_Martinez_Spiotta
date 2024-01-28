@@ -5,7 +5,10 @@
 package Interfaces;
 
 import Clases.Company;
+import java.io.File;
+import java.io.PrintWriter;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -19,7 +22,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
     /**
      * Creates new form PruebaTabbed
      */
-    public PruebaTabbed(Company nickelodeon, Company disney) {
+    public PruebaTabbed(Company nickelodeon, Company disney, int[] initialQuantitiesN, int []initialQuantitiesD) {
         initComponents();
         
         this.nickelodeon = nickelodeon;
@@ -34,14 +37,31 @@ public class PruebaTabbed extends javax.swing.JFrame {
         nickelodeon.getPm().setLabels(pmLabels);
         
         
-        //disney.startEmployees();
+        // disney.startEmployees();
         
-        this.qttyGuionistasNick.setText(Integer.toString(nickelodeon.getGuionistas().getQuantityWorkers()));
-        this.qttyEscenariosNick.setText(Integer.toString(nickelodeon.getEscenarios().getQuantityWorkers()));
-        this.qttyAnimadoresNick.setText(Integer.toString(nickelodeon.getAnimadores().getQuantityWorkers()));
-        this.qttyDobladoresNick.setText(Integer.toString(nickelodeon.getDobladores().getQuantityWorkers()));
-        this.qttyGuionistasPlotTwistsNick.setText(Integer.toString(nickelodeon.getGuionistasPlotTwists().getQuantityWorkers()));
-        this.qttyEnsambladoresNick.setText(Integer.toString(nickelodeon.getEnsambladores().getQuantityWorkers()));
+        this.qttyGuionistasNick.setText(String.valueOf(initialQuantitiesN[0]));
+        this.qttyEscenariosNick.setText(String.valueOf(initialQuantitiesN[1]));
+        this.qttyAnimadoresNick.setText(String.valueOf(initialQuantitiesN[2]));
+        this.qttyDobladoresNick.setText(String.valueOf(initialQuantitiesN[3]));
+        this.qttyGuionistasPlotTwistsNick.setText(String.valueOf(initialQuantitiesN[4]));
+        this.qttyEnsambladoresNick.setText(String.valueOf(initialQuantitiesN[5]));
+        
+        this.GuionistasNick.setText(String.valueOf(initialQuantitiesN[0]));
+        this.EscenariosNick.setText(String.valueOf(initialQuantitiesN[1]));
+        this.AnimadoresNick.setText(String.valueOf(initialQuantitiesN[2]));
+        this.DobladoresNick.setText(String.valueOf(initialQuantitiesN[3]));
+        this.GuionistasPlotTwistsNick.setText(String.valueOf(initialQuantitiesN[4]));
+        this.EnsambladoresNick.setText(String.valueOf(initialQuantitiesN[5]));
+        
+        this.GuionistasDisney.setText(String.valueOf(initialQuantitiesD[0]));
+        this.EscenariosDisney.setText(String.valueOf(initialQuantitiesD[1]));
+        this.AnimadoresDisney.setText(String.valueOf(initialQuantitiesD[2]));
+        this.DobladoresDisney.setText(String.valueOf(initialQuantitiesD[3]));
+        this.GuionistasPlotTwistsDisney.setText(String.valueOf(initialQuantitiesD[4]));
+        this.EnsambladoresDisney.setText(String.valueOf(initialQuantitiesD[5]));
+        
+        this.ammount.setText(Integer.toString(nickelodeon.getDeadline()));
+        this.dia.setText(Integer.toString(nickelodeon.getDayDuration()));
     }
 
     /**
@@ -55,6 +75,63 @@ public class PruebaTabbed extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         ConfigurationDashboard = new javax.swing.JPanel();
+        plotTwistLabel1 = new javax.swing.JLabel();
+        removePlotTwist1 = new javax.swing.JButton();
+        addDoblaje1 = new javax.swing.JButton();
+        addAnimador1 = new javax.swing.JButton();
+        GuionistasPlotTwistsNick = new javax.swing.JLabel();
+        removeAnimador1 = new javax.swing.JButton();
+        animadorLabel1 = new javax.swing.JLabel();
+        addPlotTwist1 = new javax.swing.JButton();
+        AnimadoresNick = new javax.swing.JLabel();
+        EnsambladoresNick = new javax.swing.JLabel();
+        addEnsamblador1 = new javax.swing.JButton();
+        removeDoblaje1 = new javax.swing.JButton();
+        guionistasLabel1 = new javax.swing.JLabel();
+        EscenariosNick = new javax.swing.JLabel();
+        removeEscenarios1 = new javax.swing.JButton();
+        removeGuionista2 = new javax.swing.JButton();
+        addGuionista2 = new javax.swing.JButton();
+        doblajeLabel1 = new javax.swing.JLabel();
+        DobladoresNick = new javax.swing.JLabel();
+        ensambladorLabel1 = new javax.swing.JLabel();
+        addEscenarios1 = new javax.swing.JButton();
+        removeEnsamblador1 = new javax.swing.JButton();
+        GuionistasNick = new javax.swing.JLabel();
+        escenariosLabel1 = new javax.swing.JLabel();
+        guionistasLabel2 = new javax.swing.JLabel();
+        removeGuionista3 = new javax.swing.JButton();
+        escenariosLabel2 = new javax.swing.JLabel();
+        animadorLabel2 = new javax.swing.JLabel();
+        doblajeLabel2 = new javax.swing.JLabel();
+        plotTwistLabel2 = new javax.swing.JLabel();
+        ensambladorLabel2 = new javax.swing.JLabel();
+        removeEnsamblador2 = new javax.swing.JButton();
+        EnsambladoresDisney = new javax.swing.JLabel();
+        addEnsamblador2 = new javax.swing.JButton();
+        addPlotTwist2 = new javax.swing.JButton();
+        GuionistasPlotTwistsDisney = new javax.swing.JLabel();
+        removePlotTwist2 = new javax.swing.JButton();
+        removeDoblaje2 = new javax.swing.JButton();
+        removeAnimador2 = new javax.swing.JButton();
+        removeEscenarios2 = new javax.swing.JButton();
+        GuionistasDisney = new javax.swing.JLabel();
+        EscenariosDisney = new javax.swing.JLabel();
+        AnimadoresDisney = new javax.swing.JLabel();
+        DobladoresDisney = new javax.swing.JLabel();
+        addDoblaje2 = new javax.swing.JButton();
+        addAnimador2 = new javax.swing.JButton();
+        addEscenarios2 = new javax.swing.JButton();
+        addGuionista3 = new javax.swing.JButton();
+        dayDuration = new javax.swing.JLabel();
+        removeDia = new javax.swing.JButton();
+        dia = new javax.swing.JLabel();
+        addDia = new javax.swing.JButton();
+        deadline = new javax.swing.JLabel();
+        removeAmmount = new javax.swing.JButton();
+        ammount = new javax.swing.JLabel();
+        addAmmount = new javax.swing.JButton();
+        txt = new javax.swing.JButton();
         NickelodeonDash = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         guionistasLabel = new javax.swing.JLabel();
@@ -124,15 +201,499 @@ public class PruebaTabbed extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        plotTwistLabel1.setText("Guionista de PlotTwist:");
+
+        removePlotTwist1.setText("-");
+        removePlotTwist1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removePlotTwist1ActionPerformed(evt);
+            }
+        });
+
+        addDoblaje1.setText("+");
+        addDoblaje1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addDoblaje1ActionPerformed(evt);
+            }
+        });
+
+        addAnimador1.setText("+");
+        addAnimador1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addAnimador1ActionPerformed(evt);
+            }
+        });
+
+        GuionistasPlotTwistsNick.setText("0");
+
+        removeAnimador1.setText("-");
+        removeAnimador1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeAnimador1ActionPerformed(evt);
+            }
+        });
+
+        animadorLabel1.setText("Animador de personajes:");
+
+        addPlotTwist1.setText("+");
+        addPlotTwist1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addPlotTwist1ActionPerformed(evt);
+            }
+        });
+
+        AnimadoresNick.setText("0");
+
+        EnsambladoresNick.setText("0");
+
+        addEnsamblador1.setText("+");
+        addEnsamblador1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEnsamblador1ActionPerformed(evt);
+            }
+        });
+
+        removeDoblaje1.setText("-");
+        removeDoblaje1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDoblaje1ActionPerformed(evt);
+            }
+        });
+
+        guionistasLabel1.setText("Guionistas:");
+
+        EscenariosNick.setText("0");
+
+        removeEscenarios1.setText("-");
+        removeEscenarios1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeEscenarios1ActionPerformed(evt);
+            }
+        });
+
+        removeGuionista2.setText("-");
+        removeGuionista2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeGuionista2ActionPerformed(evt);
+            }
+        });
+
+        addGuionista2.setText("+");
+        addGuionista2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addGuionista2ActionPerformed(evt);
+            }
+        });
+
+        doblajeLabel1.setText("Actores de doblaje:");
+
+        DobladoresNick.setText("0");
+
+        ensambladorLabel1.setText("Ensambladores:");
+
+        addEscenarios1.setText("+");
+        addEscenarios1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEscenarios1ActionPerformed(evt);
+            }
+        });
+
+        removeEnsamblador1.setText("-");
+        removeEnsamblador1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeEnsamblador1ActionPerformed(evt);
+            }
+        });
+
+        GuionistasNick.setText("0");
+
+        escenariosLabel1.setText("Diseñador de escenarios:");
+
+        guionistasLabel2.setText("Guionistas:");
+
+        removeGuionista3.setText("-");
+        removeGuionista3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeGuionista3ActionPerformed(evt);
+            }
+        });
+
+        escenariosLabel2.setText("Diseñador de escenarios:");
+
+        animadorLabel2.setText("Animador de personajes:");
+
+        doblajeLabel2.setText("Actores de doblaje:");
+
+        plotTwistLabel2.setText("Guionista de PlotTwist:");
+
+        ensambladorLabel2.setText("Ensambladores:");
+
+        removeEnsamblador2.setText("-");
+        removeEnsamblador2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeEnsamblador2ActionPerformed(evt);
+            }
+        });
+
+        EnsambladoresDisney.setText("0");
+
+        addEnsamblador2.setText("+");
+        addEnsamblador2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEnsamblador2ActionPerformed(evt);
+            }
+        });
+
+        addPlotTwist2.setText("+");
+        addPlotTwist2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addPlotTwist2ActionPerformed(evt);
+            }
+        });
+
+        GuionistasPlotTwistsDisney.setText("0");
+
+        removePlotTwist2.setText("-");
+        removePlotTwist2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removePlotTwist2ActionPerformed(evt);
+            }
+        });
+
+        removeDoblaje2.setText("-");
+        removeDoblaje2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDoblaje2ActionPerformed(evt);
+            }
+        });
+
+        removeAnimador2.setText("-");
+        removeAnimador2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeAnimador2ActionPerformed(evt);
+            }
+        });
+
+        removeEscenarios2.setText("-");
+        removeEscenarios2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeEscenarios2ActionPerformed(evt);
+            }
+        });
+
+        GuionistasDisney.setText("0");
+
+        EscenariosDisney.setText("0");
+
+        AnimadoresDisney.setText("0");
+
+        DobladoresDisney.setText("0");
+
+        addDoblaje2.setText("+");
+        addDoblaje2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addDoblaje2ActionPerformed(evt);
+            }
+        });
+
+        addAnimador2.setText("+");
+        addAnimador2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addAnimador2ActionPerformed(evt);
+            }
+        });
+
+        addEscenarios2.setText("+");
+        addEscenarios2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEscenarios2ActionPerformed(evt);
+            }
+        });
+
+        addGuionista3.setText("+");
+        addGuionista3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addGuionista3ActionPerformed(evt);
+            }
+        });
+
+        dayDuration.setText("Duracion de un dia");
+
+        removeDia.setText("-");
+        removeDia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeDiaActionPerformed(evt);
+            }
+        });
+
+        dia.setText("0");
+
+        addDia.setText("+");
+        addDia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addDiaActionPerformed(evt);
+            }
+        });
+
+        deadline.setText("Deadline");
+
+        removeAmmount.setText("-");
+        removeAmmount.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeAmmountActionPerformed(evt);
+            }
+        });
+
+        ammount.setText("0");
+
+        addAmmount.setText("+");
+        addAmmount.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addAmmountActionPerformed(evt);
+            }
+        });
+
+        txt.setText("Guardar");
+        txt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ConfigurationDashboardLayout = new javax.swing.GroupLayout(ConfigurationDashboard);
         ConfigurationDashboard.setLayout(ConfigurationDashboardLayout);
         ConfigurationDashboardLayout.setHorizontalGroup(
             ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 948, Short.MAX_VALUE)
+            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                        .addComponent(dayDuration)
+                        .addGap(18, 18, 18)
+                        .addComponent(removeDia)
+                        .addGap(11, 11, 11)
+                        .addComponent(dia)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(addDia))
+                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                            .addGap(24, 24, 24)
+                                            .addComponent(doblajeLabel1))
+                                        .addComponent(animadorLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(escenariosLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConfigurationDashboardLayout.createSequentialGroup()
+                                            .addComponent(guionistasLabel1)
+                                            .addGap(37, 37, 37)))
+                                    .addComponent(plotTwistLabel1))
+                                .addGap(18, 18, 18)
+                                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(removeGuionista2)
+                                            .addComponent(removeEscenarios1))
+                                        .addGap(11, 11, 11))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConfigurationDashboardLayout.createSequentialGroup()
+                                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(removeDoblaje1)
+                                            .addComponent(removeAnimador1)
+                                            .addComponent(removePlotTwist1)
+                                            .addComponent(removeEnsamblador1))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addComponent(ensambladorLabel1)
+                                .addGap(75, 75, 75)))
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(GuionistasNick)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addGuionista2))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(EscenariosNick)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addEscenarios1))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(AnimadoresNick)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addAnimador1))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(DobladoresNick)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addDoblaje1))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(GuionistasPlotTwistsNick)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addPlotTwist1))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(EnsambladoresNick)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addEnsamblador1)))))
+                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                            .addGap(24, 24, 24)
+                                            .addComponent(doblajeLabel2))
+                                        .addComponent(animadorLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(escenariosLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConfigurationDashboardLayout.createSequentialGroup()
+                                            .addComponent(guionistasLabel2)
+                                            .addGap(37, 37, 37)))
+                                    .addComponent(plotTwistLabel2))
+                                .addGap(18, 18, 18)
+                                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(removeGuionista3)
+                                            .addComponent(removeEscenarios2))
+                                        .addGap(11, 11, 11))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConfigurationDashboardLayout.createSequentialGroup()
+                                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(removeDoblaje2)
+                                            .addComponent(removeAnimador2)
+                                            .addComponent(removePlotTwist2)
+                                            .addComponent(removeEnsamblador2))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addComponent(ensambladorLabel2)
+                                .addGap(75, 75, 75)))
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(GuionistasDisney)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addGuionista3))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(EscenariosDisney)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addEscenarios2))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(AnimadoresDisney)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addAnimador2))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(DobladoresDisney)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addDoblaje2))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(GuionistasPlotTwistsDisney)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addPlotTwist2))
+                            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                                .addComponent(EnsambladoresDisney)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addEnsamblador2))))
+                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(txt)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
+                        .addComponent(deadline)
+                        .addGap(18, 18, 18)
+                        .addComponent(removeAmmount)
+                        .addGap(11, 11, 11)
+                        .addComponent(ammount)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(addAmmount)))
+                .addGap(205, 205, 205))
         );
         ConfigurationDashboardLayout.setVerticalGroup(
             ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
+            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(guionistasLabel2)
+                            .addComponent(GuionistasDisney)
+                            .addComponent(removeGuionista3)
+                            .addComponent(addGuionista3))
+                        .addGap(25, 25, 25)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(escenariosLabel2)
+                            .addComponent(EscenariosDisney)
+                            .addComponent(removeEscenarios2)
+                            .addComponent(addEscenarios2))
+                        .addGap(36, 36, 36)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(animadorLabel2)
+                            .addComponent(AnimadoresDisney)
+                            .addComponent(removeAnimador2)
+                            .addComponent(addAnimador2))
+                        .addGap(37, 37, 37)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(doblajeLabel2)
+                            .addComponent(DobladoresDisney)
+                            .addComponent(removeDoblaje2)
+                            .addComponent(addDoblaje2))
+                        .addGap(34, 34, 34)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(plotTwistLabel2)
+                            .addComponent(GuionistasPlotTwistsDisney)
+                            .addComponent(removePlotTwist2)
+                            .addComponent(addPlotTwist2))
+                        .addGap(30, 30, 30)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(ensambladorLabel2)
+                            .addComponent(EnsambladoresDisney)
+                            .addComponent(removeEnsamblador2)
+                            .addComponent(addEnsamblador2)))
+                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(guionistasLabel1)
+                            .addComponent(GuionistasNick)
+                            .addComponent(removeGuionista2)
+                            .addComponent(addGuionista2))
+                        .addGap(25, 25, 25)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(escenariosLabel1)
+                            .addComponent(EscenariosNick)
+                            .addComponent(removeEscenarios1)
+                            .addComponent(addEscenarios1))
+                        .addGap(36, 36, 36)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(animadorLabel1)
+                            .addComponent(AnimadoresNick)
+                            .addComponent(removeAnimador1)
+                            .addComponent(addAnimador1))
+                        .addGap(37, 37, 37)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(doblajeLabel1)
+                            .addComponent(DobladoresNick)
+                            .addComponent(removeDoblaje1)
+                            .addComponent(addDoblaje1))
+                        .addGap(34, 34, 34)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(plotTwistLabel1)
+                            .addComponent(GuionistasPlotTwistsNick)
+                            .addComponent(removePlotTwist1)
+                            .addComponent(addPlotTwist1))
+                        .addGap(30, 30, 30)
+                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(ensambladorLabel1)
+                            .addComponent(EnsambladoresNick)
+                            .addComponent(removeEnsamblador1)
+                            .addComponent(addEnsamblador1))))
+                .addGap(58, 58, 58)
+                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(dayDuration)
+                    .addComponent(dia)
+                    .addComponent(removeDia)
+                    .addComponent(addDia)
+                    .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(deadline)
+                        .addComponent(ammount)
+                        .addComponent(removeAmmount)
+                        .addComponent(addAmmount))
+                    .addComponent(txt))
+                .addContainerGap(155, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("ConfigurationDashboard", ConfigurationDashboard);
@@ -572,7 +1133,6 @@ public class PruebaTabbed extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Nickelodeon", NickelodeonDash);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/fabriziospiotta/Documents/NetBeans/Imagenes/Fondo Azul.jpeg")); // NOI18N
         jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout DisneyDashLayout = new javax.swing.GroupLayout(DisneyDash);
@@ -676,48 +1236,373 @@ public class PruebaTabbed extends javax.swing.JFrame {
     private void addEnsambladorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEnsambladorActionPerformed
         // TODO add your handling code here:
         nickelodeon.addWorkers(5);
-        this.qttyGuionistasPlotTwistsNick.setText(Integer.toString(nickelodeon.getGuionistasPlotTwists().getQuantityWorkers()));
+        this.qttyEnsambladoresNick.setText(Integer.toString(nickelodeon.getEnsambladores().getQuantityWorkers()));
     }//GEN-LAST:event_addEnsambladorActionPerformed
 
+    private void removeGuionista2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeGuionista2ActionPerformed
+        if (Integer.parseInt(GuionistasNick.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(GuionistasNick.getText())-1;
+            GuionistasNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeGuionista2ActionPerformed
+
+    private void removeEnsamblador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeEnsamblador1ActionPerformed
+        if (Integer.parseInt(EnsambladoresNick.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(EnsambladoresNick.getText())-1;
+            EnsambladoresNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeEnsamblador1ActionPerformed
+
+    private void addEnsamblador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEnsamblador1ActionPerformed
+        if (calculateQuantityN() == 12){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(EnsambladoresNick.getText())+1;
+            EnsambladoresNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addEnsamblador1ActionPerformed
+
+    private void addPlotTwist1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPlotTwist1ActionPerformed
+        if (calculateQuantityN() == 12){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(GuionistasPlotTwistsNick.getText())+1;
+            GuionistasPlotTwistsNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addPlotTwist1ActionPerformed
+
+    private void removePlotTwist1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removePlotTwist1ActionPerformed
+        if (Integer.parseInt(GuionistasPlotTwistsNick.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(GuionistasPlotTwistsNick.getText())-1;
+            GuionistasPlotTwistsNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removePlotTwist1ActionPerformed
+
+    private void removeDoblaje1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeDoblaje1ActionPerformed
+        if (Integer.parseInt(DobladoresNick.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(DobladoresNick.getText())-1;
+            DobladoresNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeDoblaje1ActionPerformed
+
+    private void removeAnimador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeAnimador1ActionPerformed
+        if (Integer.parseInt(AnimadoresNick.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(AnimadoresNick.getText())-1;
+            AnimadoresNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeAnimador1ActionPerformed
+
+    private void removeEscenarios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeEscenarios1ActionPerformed
+        if (Integer.parseInt(EscenariosNick.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(EscenariosNick.getText())-1;
+            EscenariosNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeEscenarios1ActionPerformed
+
+    private void addDoblaje1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDoblaje1ActionPerformed
+        if (calculateQuantityN() == 12){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(DobladoresNick.getText())+1;
+            DobladoresNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addDoblaje1ActionPerformed
+
+    private void addAnimador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAnimador1ActionPerformed
+        if (calculateQuantityN() == 12){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(AnimadoresNick.getText())+1;
+            AnimadoresNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addAnimador1ActionPerformed
+
+    private void addEscenarios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEscenarios1ActionPerformed
+       if (calculateQuantityN() == 12){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(EscenariosNick.getText())+1;
+            EscenariosNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addEscenarios1ActionPerformed
+
+    private void addGuionista2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addGuionista2ActionPerformed
+        if (calculateQuantityN() == 12){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(GuionistasNick.getText())+1;
+            GuionistasNick.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addGuionista2ActionPerformed
+
+    private void removeGuionista3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeGuionista3ActionPerformed
+        if (Integer.parseInt(GuionistasDisney.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(GuionistasDisney.getText())-1;
+            GuionistasDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeGuionista3ActionPerformed
+
+    private void removeEnsamblador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeEnsamblador2ActionPerformed
+        if (Integer.parseInt(EnsambladoresDisney.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(EnsambladoresDisney.getText())-1;
+            EnsambladoresDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeEnsamblador2ActionPerformed
+
+    private void addEnsamblador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEnsamblador2ActionPerformed
+        if (calculateQuantityD() == 13){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(EnsambladoresDisney.getText())+1;
+            EnsambladoresDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addEnsamblador2ActionPerformed
+
+    private void addPlotTwist2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPlotTwist2ActionPerformed
+        if (calculateQuantityD() == 13){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(GuionistasPlotTwistsDisney.getText())+1;
+            GuionistasPlotTwistsDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addPlotTwist2ActionPerformed
+
+    private void removePlotTwist2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removePlotTwist2ActionPerformed
+        if (Integer.parseInt(GuionistasPlotTwistsDisney.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(GuionistasPlotTwistsDisney.getText())-1;
+            GuionistasPlotTwistsDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removePlotTwist2ActionPerformed
+
+    private void removeDoblaje2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeDoblaje2ActionPerformed
+        if (Integer.parseInt(DobladoresDisney.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(DobladoresDisney.getText())-1;
+            DobladoresDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeDoblaje2ActionPerformed
+
+    private void removeAnimador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeAnimador2ActionPerformed
+        if (Integer.parseInt(AnimadoresDisney.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(AnimadoresDisney.getText())-1;
+            AnimadoresDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeAnimador2ActionPerformed
+
+    private void removeEscenarios2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeEscenarios2ActionPerformed
+        if (Integer.parseInt(EscenariosDisney.getText()) == 1){
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        } else{
+            int nuevo = Integer.parseInt(EscenariosDisney.getText())-1;
+            EscenariosDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeEscenarios2ActionPerformed
+
+    private void addDoblaje2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDoblaje2ActionPerformed
+        if (calculateQuantityD() == 13){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(DobladoresDisney.getText())+1;
+            DobladoresDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addDoblaje2ActionPerformed
+
+    private void addAnimador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAnimador2ActionPerformed
+        if (calculateQuantityD() == 13) {
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(AnimadoresDisney.getText()) + 1;
+            AnimadoresDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addAnimador2ActionPerformed
+
+    private void addEscenarios2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEscenarios2ActionPerformed
+        if (calculateQuantityD() == 13){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(EscenariosDisney.getText())+1;
+            EscenariosDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addEscenarios2ActionPerformed
+
+    private void addGuionista3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addGuionista3ActionPerformed
+        if (calculateQuantityD() == 13){
+            JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
+        } else {
+            int nuevo = Integer.parseInt(GuionistasDisney.getText())+1;
+            GuionistasDisney.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_addGuionista3ActionPerformed
+
+    private void removeAmmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeAmmountActionPerformed
+        if(Integer.parseInt(ammount.getText())== 1){
+            JOptionPane.showMessageDialog(null, "SE DEBE TENER POR LO MENOS UN DIA COMO DEADLINE DE ENTREGA");
+        } else {
+            int nuevo = Integer.parseInt(ammount.getText())-1;
+            ammount.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeAmmountActionPerformed
+
+    private void addAmmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAmmountActionPerformed
+        int nuevo = Integer.parseInt(ammount.getText())+1;
+        ammount.setText(String.valueOf(nuevo));
+    }//GEN-LAST:event_addAmmountActionPerformed
+
+    private void addDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDiaActionPerformed
+        int nuevo = Integer.parseInt(dia.getText())+1;
+        dia.setText(String.valueOf(nuevo));
+    }//GEN-LAST:event_addDiaActionPerformed
+
+    private void removeDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeDiaActionPerformed
+        if(Integer.parseInt(dia.getText())==2000){
+            JOptionPane.showMessageDialog(null, "EL DIA DEBE DURAR MINIMO 2000MS");
+        } else {
+            int nuevo = Integer.parseInt(dia.getText())-1;
+            dia.setText(String.valueOf(nuevo));
+        }
+    }//GEN-LAST:event_removeDiaActionPerformed
+
+    private void txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtActionPerformed
+        String quantities = GuionistasNick.getText() + ", " + EscenariosNick.getText() + ", " + AnimadoresNick.getText() + ", " + DobladoresNick.getText() + ", " + GuionistasPlotTwistsNick.getText() + ", " + EnsambladoresNick.getText() + " / " + GuionistasDisney.getText() + ", " + EscenariosDisney.getText() + ", " + AnimadoresDisney.getText() + ", " + DobladoresDisney.getText() + ", " + GuionistasPlotTwistsDisney.getText() + ", " + EnsambladoresDisney.getText();
+        String data = dia.getText() + " / " + ammount.getText();
+        
+        // DATOS INICIALES
+        File fichero = new File("DatosIniciales.txt");
+        String contenido = "";
+        
+        try{
+            PrintWriter salida = new PrintWriter(fichero);
+            salida.print(data);
+            salida.close();
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        
+        // CANTIDADES INICIALES
+        
+        fichero = new File("InitialQuantity.txt");
+        
+        try{
+            PrintWriter salida = new PrintWriter(fichero);
+            salida.print(quantities);
+            salida.close();
+        }catch(Exception e){
+            System.out.println(e);
+        }
+    }//GEN-LAST:event_txtActionPerformed
+
+    private int calculateQuantityN(){
+        int cantidadTotal = Integer.parseInt(GuionistasNick.getText()) + Integer.parseInt(EscenariosNick.getText()) + Integer.parseInt(AnimadoresNick.getText()) + Integer.parseInt(DobladoresNick.getText()) + Integer.parseInt(GuionistasPlotTwistsNick.getText()) + Integer.parseInt(EnsambladoresNick.getText());
+        System.out.println(cantidadTotal);
+        return cantidadTotal;
+    }
+    
+    private int calculateQuantityD(){
+        int cantidadTotal = Integer.parseInt(GuionistasDisney.getText()) + Integer.parseInt(EscenariosDisney.getText()) + Integer.parseInt(AnimadoresDisney.getText()) + Integer.parseInt(DobladoresDisney.getText()) + Integer.parseInt(GuionistasPlotTwistsDisney.getText()) + Integer.parseInt(EnsambladoresDisney.getText());
+        return cantidadTotal;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AnimacionesMaxLabel2;
     private javax.swing.JLabel AnimacionesSavedLabel;
+    private javax.swing.JLabel AnimadoresDisney;
+    private javax.swing.JLabel AnimadoresNick;
     private javax.swing.JPanel ConfigurationDashboard;
     private javax.swing.JPanel DisneyDash;
+    private javax.swing.JLabel DobladoresDisney;
+    private javax.swing.JLabel DobladoresNick;
+    private javax.swing.JLabel EnsambladoresDisney;
+    private javax.swing.JLabel EnsambladoresNick;
+    private javax.swing.JLabel EscenariosDisney;
     private javax.swing.JLabel EscenariosMaxLabel;
+    private javax.swing.JLabel EscenariosNick;
     private javax.swing.JLabel EscenariosSavedLabel;
     private javax.swing.JLabel GuionesMaxLabel;
     private javax.swing.JLabel GuionesSavedLabel;
+    private javax.swing.JLabel GuionistasDisney;
+    private javax.swing.JLabel GuionistasNick;
+    private javax.swing.JLabel GuionistasPlotTwistsDisney;
+    private javax.swing.JLabel GuionistasPlotTwistsNick;
     private javax.swing.JPanel NickelodeonDash;
+    private javax.swing.JButton addAmmount;
     private javax.swing.JButton addAnimador;
+    private javax.swing.JButton addAnimador1;
+    private javax.swing.JButton addAnimador2;
+    private javax.swing.JButton addDia;
     private javax.swing.JButton addDoblaje;
+    private javax.swing.JButton addDoblaje1;
+    private javax.swing.JButton addDoblaje2;
     private javax.swing.JButton addEnsamblador;
+    private javax.swing.JButton addEnsamblador1;
+    private javax.swing.JButton addEnsamblador2;
     private javax.swing.JButton addEscenarios;
+    private javax.swing.JButton addEscenarios1;
+    private javax.swing.JButton addEscenarios2;
     private javax.swing.JButton addGuionista;
+    private javax.swing.JButton addGuionista2;
+    private javax.swing.JButton addGuionista3;
     private javax.swing.JButton addPlotTwist;
+    private javax.swing.JButton addPlotTwist1;
+    private javax.swing.JButton addPlotTwist2;
+    private javax.swing.JLabel ammount;
     private javax.swing.JLabel animadorLabel;
+    private javax.swing.JLabel animadorLabel1;
+    private javax.swing.JLabel animadorLabel2;
     private javax.swing.JLabel capsPlotTwistReadyLabel;
     private javax.swing.JLabel capsReadyLabel;
     private javax.swing.JLabel costosLabel;
     private javax.swing.JLabel costosLabelText;
     private javax.swing.JLabel costosLabelText1;
+    private javax.swing.JLabel dayDuration;
+    private javax.swing.JLabel deadline;
+    private javax.swing.JLabel dia;
     private javax.swing.JLabel directorStatus;
     private javax.swing.JLabel directorStatusLabel;
     private javax.swing.JLabel doblajeLabel;
+    private javax.swing.JLabel doblajeLabel1;
+    private javax.swing.JLabel doblajeLabel2;
     private javax.swing.JLabel doblajesMaxLabel3;
     private javax.swing.JLabel doblajesSavedLabel3;
     private javax.swing.JLabel ensambladorLabel;
+    private javax.swing.JLabel ensambladorLabel1;
+    private javax.swing.JLabel ensambladorLabel2;
     private javax.swing.JLabel escenariosLabel;
+    private javax.swing.JLabel escenariosLabel1;
+    private javax.swing.JLabel escenariosLabel2;
     private javax.swing.JLabel gananciaLabelText;
     private javax.swing.JLabel gananciasLabel;
     private javax.swing.JLabel guionistasLabel;
+    private javax.swing.JLabel guionistasLabel1;
+    private javax.swing.JLabel guionistasLabel2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel plotTwistLabel;
+    private javax.swing.JLabel plotTwistLabel1;
+    private javax.swing.JLabel plotTwistLabel2;
     private javax.swing.JLabel plotTwistsMaxLabel4;
     private javax.swing.JLabel plotTwistsSavedLabel4;
     private javax.swing.JLabel pmStatus;
@@ -742,12 +1627,27 @@ public class PruebaTabbed extends javax.swing.JFrame {
     private javax.swing.JLabel qttyPlotTwistsSavedNick;
     private javax.swing.JLabel qttyProjectsManagersNick;
     private javax.swing.JLabel qttyStandardCapsReadyNick;
+    private javax.swing.JButton removeAmmount;
     private javax.swing.JButton removeAnimador;
+    private javax.swing.JButton removeAnimador1;
+    private javax.swing.JButton removeAnimador2;
+    private javax.swing.JButton removeDia;
     private javax.swing.JButton removeDoblaje;
+    private javax.swing.JButton removeDoblaje1;
+    private javax.swing.JButton removeDoblaje2;
     private javax.swing.JButton removeEnsamblador;
+    private javax.swing.JButton removeEnsamblador1;
+    private javax.swing.JButton removeEnsamblador2;
     private javax.swing.JButton removeEscenarios;
+    private javax.swing.JButton removeEscenarios1;
+    private javax.swing.JButton removeEscenarios2;
     private javax.swing.JButton removeGuionista;
+    private javax.swing.JButton removeGuionista2;
+    private javax.swing.JButton removeGuionista3;
     private javax.swing.JButton removePlotTwist;
+    private javax.swing.JButton removePlotTwist1;
+    private javax.swing.JButton removePlotTwist2;
+    private javax.swing.JButton txt;
     private javax.swing.JLabel utilidadesLabel;
     // End of variables declaration//GEN-END:variables
 }

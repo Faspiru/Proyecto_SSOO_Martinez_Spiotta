@@ -59,7 +59,6 @@ public class Worker extends Thread{
             try {
                 paySalary();
                 work();
-                System.out.println("Trabajador: "+ this.getType() + " gana: "+this.getSalaryAcumulate()+"$");
                 sleep(this.getDayDuration());
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
@@ -68,6 +67,7 @@ public class Worker extends Thread{
     }
     
     public void paySalary(){
+        //System.out.println("WORKER " + type + " Acumulado " + salaryAcumulate);
         this.setSalaryAcumulate(this.getSalaryAcumulate() + ((this.getSalary() * 24)) * this.getQuantityWorkers());
     }
     

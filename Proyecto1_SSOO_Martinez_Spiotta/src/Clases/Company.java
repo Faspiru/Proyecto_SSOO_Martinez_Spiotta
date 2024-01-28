@@ -26,7 +26,6 @@ public class Company extends Thread{
     private Assembler ensambladores;
     private Director director;
     private PM pm;
-    private Semaphore mutex2;  //Creo que como el pm y el director acceden al deadline, deberia haber un semaforo aparte para eso
     
     private int [] necessities;
     private int [] daysToFinishWork;
@@ -45,6 +44,8 @@ public class Company extends Thread{
     //private JLabel [] qttyPartsSavedLabels;
     
     private Semaphore mutex;
+    private Semaphore mutex2;
+    private Semaphore mutex3;
     private Drive drive;
     
     // Atributos de dinero
@@ -64,12 +65,13 @@ public class Company extends Thread{
         this.drive = new Drive(necessities, this);
         this.mutex = new Semaphore(1);
         this.mutex2 = new Semaphore(1);
+        this.mutex3 = new Semaphore(1);
         this.deadline = deadline;
         //startEmployees();   
     }
     
     public void costosCalculate() {
-        this.costos = (int) (guionistas.getSalaryAcumulate() + escenarios.getSalaryAcumulate() + animadores.getSalaryAcumulate() + dobladores.getSalaryAcumulate() + guionistasPlotTwists.getSalaryAcumulate() + ensambladores.getSalaryAcumulate()); // falta el director
+       this.costos = (int) (guionistas.getSalaryAcumulate() + escenarios.getSalaryAcumulate() + animadores.getSalaryAcumulate() + dobladores.getSalaryAcumulate() + guionistasPlotTwists.getSalaryAcumulate() + ensambladores.getSalaryAcumulate() + pm.getSalaryAcumulate() + director.getSalaryAcumulate()); // falta el director//critica           
     }
     
     public void utilidadesTotales() {
@@ -83,8 +85,8 @@ public class Company extends Thread{
         dobladores = new Worker(3, dayDuration, initialQuantity[3], drive, mutex, daysToFinishWork);
         guionistasPlotTwists = new Worker(4, dayDuration, initialQuantity[4], drive, mutex, daysToFinishWork);
         ensambladores = new Assembler(dayDuration, initialQuantity[5], drive, mutex);
-        director = new Director(dayDuration, drive, mutex, mutex2, this);
-        pm = new PM(dayDuration, mutex, mutex2, this);
+        pm = new PM(dayDuration, mutex, mutex2, mutex3, this);
+        director = new Director(dayDuration, drive, mutex, mutex2, mutex3, this);
        
         guionistas.start();
         escenarios.start();
@@ -92,14 +94,13 @@ public class Company extends Thread{
         dobladores.start();
         guionistasPlotTwists.start();
         ensambladores.start();  
-        director.start();
-        pm.start();    //PM y Director son hilos porque ambos tienen acceso al contador del deadline  
+        pm.start();   
+        director.start();//PM y Director son hilos porque ambos tienen acceso al contador del deadline  
               
     }
     
     public void addWorkers(int type) {
         int actualWorkersCounter = (guionistas.getQuantityWorkers() + escenarios.getQuantityWorkers() + animadores.getQuantityWorkers() + dobladores.getQuantityWorkers() + guionistasPlotTwists.getQuantityWorkers() + ensambladores.getQuantityWorkers());
-        
         if (actualWorkersCounter < maxWorkers) {
             if (type == 0) {
                 guionistas.addWorker();  
@@ -228,6 +229,14 @@ public class Company extends Thread{
 
     public void setDeadline(int deadline) {
         this.deadline = deadline;
+    }
+
+    public int getDayDuration() {
+        return dayDuration;
+    }
+
+    public void setDayDuration(int dayDuration) {
+        this.dayDuration = dayDuration;
     }
     
     

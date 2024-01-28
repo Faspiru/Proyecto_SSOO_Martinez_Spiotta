@@ -46,7 +46,6 @@ public class Drive {
                 this.setGuiones(25);
             }
             this.labels[type].setText(Integer.toString(this.getGuiones()));
-            System.out.println("Guiones disponibles:" + this.getGuiones());
         }
         else if (type == 1 && this.getEscenarios() < 20){
             int calc = this.getEscenarios() + (1 * quantityWorkers);
@@ -56,7 +55,6 @@ public class Drive {
                 this.setEscenarios(20);
             }
             this.labels[type].setText(Integer.toString(this.getEscenarios()));
-            System.out.println("Escenarios disponibles:" + this.getEscenarios());
         }
         else if (type == 2 && this.getAnimaciones() < 55){
             int calc = this.getAnimaciones() + (3 * quantityWorkers);
@@ -66,7 +64,6 @@ public class Drive {
                 this.setAnimaciones(55);
             }
             this.labels[type].setText(Integer.toString(this.getAnimaciones()));
-            System.out.println("Animaciones disponibles:" + this.getAnimaciones());
         }
         else if (type == 3 && this.getDoblajes() < 35){
             int calc = this.getDoblajes() + (3 * quantityWorkers);
@@ -76,7 +73,6 @@ public class Drive {
                 this.setDoblajes(35);
             }
             this.labels[type].setText(Integer.toString(this.getDoblajes()));
-            System.out.println("Doblajes disponibles:" + this.getDoblajes());
         }
         else if (type == 4 && this.getGuionPlotTwist() < 10){
             int calc = this.getGuionPlotTwist() + (1 * quantityWorkers);
@@ -86,7 +82,6 @@ public class Drive {
                 this.setGuionPlotTwist(10);
             }
             this.labels[type].setText(Integer.toString(this.getGuionPlotTwist()));
-            System.out.println("PlotTwists disponibles:" + this.getGuionPlotTwist());
         }
         check();
     }
@@ -120,7 +115,6 @@ public class Drive {
         
         
         // Final
-        System.out.println("Cantidad de Capitulos -->" + quantityChapters);
         /*
         if (quantityChapters > quantityAssemblers){
             quantityChapters = quantityAssemblers;
@@ -148,21 +142,13 @@ public class Drive {
         capitulos += quantityChapters;
         counterForPT += quantityChapters;
         
-        System.out.println("Capitulos disponibles:" + this.capitulos);
         this.labels[5].setText(Integer.toString(capitulos));
-        System.out.println("Capitulos con PlotTwist disponibles:" + this.plotwist);
         this.labels[6].setText(Integer.toString(plotwist));
-        System.out.println("Guiones disponibles:" + this.getGuiones());
-        System.out.println("Escenarios disponibles:" + this.getEscenarios());
-        System.out.println("Animaciones disponibles:" + this.getAnimaciones());
-        System.out.println("Doblajes disponibles:" + this.getDoblajes());
-        System.out.println("PlotTwists disponibles:" + this.getGuionPlotTwist());
         
     }
     
     public boolean check(){
         boolean ready = false;
-        System.out.println("\nVALUES --> " + (guiones >= necessities[0]) + " -" + (escenarios >= necessities[1]) + " - " + (animaciones >= necessities[2]) + " - " + (doblajes >= necessities[3]));
         if (guiones >= necessities[0] &&  escenarios >= necessities[1] && animaciones >= necessities[2] && doblajes >= necessities[3]){
             ready= true;
         } 
@@ -185,11 +171,8 @@ public class Drive {
     }
     
     public void sendChapters() {
-        System.out.println(capitulos);
         this.company.setGanancias(this.company.getGanancias() + (this.company.getChapterPrice()*capitulos));
-        System.out.println(this.company.getGanancias());
         this.company.setGanancias(this.company.getGanancias() + this.company.getPtPrice()*plotwist);
-        System.out.println(this.company.getGanancias());
         this.labels[7].setText(Integer.toString(this.company.getGanancias()));
         capitulos = 0;
         plotwist = 0;

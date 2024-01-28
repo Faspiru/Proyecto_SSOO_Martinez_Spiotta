@@ -42,7 +42,6 @@ public class Assembler extends Thread{
                 }else{
                     work();
                 }
-                System.out.println("Trabajador: Ensamblador" + ". Gana: "+this.salaryAcumulate+"$");
                 sleep(this.dayDuration);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
@@ -73,7 +72,6 @@ public class Assembler extends Thread{
         try {
             this.mutex.acquire(); //wait
             ready = this.drive.check();
-            System.out.println("\nCHEQUEO --> " + ready);
             this.mutex.release(); // signal
         } catch (InterruptedException ex) {
             Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);

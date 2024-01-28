@@ -20,6 +20,7 @@ public class PM extends Thread{
     private int dayDuration;
     private int salary;
     private int fault;
+    private int discounted;
     private String status;
     // private atributo deadline 
     private int hoursCounter;
@@ -28,16 +29,19 @@ public class PM extends Thread{
     private Semaphore mutex;
     private Company company;
     private Semaphore mutex2;
+    private Semaphore mutex3;
  
-    public PM(int dayDuration, Semaphore mutex, Semaphore mutex2, Company company){
+    public PM(int dayDuration, Semaphore mutex, Semaphore mutex2, Semaphore mutex3, Company company){
         this.salaryAcumulate = 0;
         this.dayDuration = dayDuration;
         this.salary = 40;
         this.fault = 0;
+        this.discounted = 0;
         this.hoursCounter = 0;
         this.minutesCounter = 0;
+        this.status = "Viendo One Piece (anime)";
         this.mutex = mutex;
-        this.status = "Anime";
+        this.mutex3 = mutex3;
         this.mutex2 = mutex2;
         this.company = company;
     }
@@ -47,14 +51,10 @@ public class PM extends Thread{
     public void run(){
         while(true) {
             try {
-                this.company.costosCalculate();
-                this.labels[1].setText(Integer.toString(this.company.getCostos()));
-                this.company.utilidadesTotales();
-                this.labels[2].setText(Integer.toString(this.company.getUtilidad()));
                 paySalary();
+                calculate();
                 // Primeras 16 horas
                 long startTime = System.currentTimeMillis();
-                // Ni idea si esto funcione pero es como para simular ese bucle de ver anime y trabajar por las primeras 16 horas
                 while(System.currentTimeMillis() - startTime <= ((dayDuration/24)*16)){
                     status = "Viendo One Piece (anime)";
                     this.labels[0].setText(status);
@@ -71,22 +71,42 @@ public class PM extends Thread{
                 this.labels[0].setText(status);
                 work();
                 sleep((dayDuration/24)*8);
-                System.out.println("Trabajador: PM. Gana: "+this.salaryAcumulate+"$");
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
     
-       public void paySalary(){
-        salaryAcumulate = this.salaryAcumulate + (this.salary* 24);
+    public void paySalary(){
+        try {
+          this.mutex3.acquire(); //wait
+          salaryAcumulate = this.salaryAcumulate + (this.salary* 24); //critica
+          this.mutex3.release(); // signal
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
+       
+     public void calculate(){
+         try {
+            this.mutex3.acquire(); //wait
+            this.company.costosCalculate(); //critica
+            this.labels[1].setText(Integer.toString(this.company.getCostos()));
+            this.company.utilidadesTotales();
+            this.labels[2].setText(Integer.toString(this.company.getUtilidad()));
+            this.mutex3.release(); // signal
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+        }
+     }
        
        
     public void work(){
         try {
             this.mutex2.acquire(); //wait
             this.company.setDeadline(this.company.getDeadline() - 1); //critica
+            // LABEL DEADLINE
             this.mutex2.release(); // signal
         } catch (InterruptedException ex) {
             Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
@@ -177,5 +197,15 @@ public class PM extends Thread{
     public void setMutex(Semaphore mutex) {
         this.mutex = mutex;
     }
+
+    public int getDiscounted() {
+        return discounted;
+    }
+
+    public void setDiscounted(int discounted) {
+        this.discounted = discounted;
+    }
+    
+    
     
 }
