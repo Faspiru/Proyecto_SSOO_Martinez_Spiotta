@@ -37,11 +37,11 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel1">
+        <Container class="javax.swing.JPanel" name="ConfigurationDashboard">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="tab1">
-                <Property name="tabTitle" type="java.lang.String" value="tab1"/>
+              <JTabbedPaneConstraints tabName="ConfigurationDashboard">
+                <Property name="tabTitle" type="java.lang.String" value="ConfigurationDashboard"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -49,21 +49,21 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="543" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="948" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="310" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="590" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel2">
+        <Container class="javax.swing.JPanel" name="NickelodeonDash">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="tab2">
-                <Property name="tabTitle" type="java.lang.String" value="tab2"/>
+              <JTabbedPaneConstraints tabName="Nickelodeon">
+                <Property name="tabTitle" type="java.lang.String" value="Nickelodeon"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -71,21 +71,667 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="543" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="427" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                                  <Component id="doblajeLabel" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="animadorLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="escenariosLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="guionistasLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="plotTwistLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="removeGuionista" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="removeEscenarios" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="removeDoblaje" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="removeAnimador" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="removePlotTwist" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="removeEnsamblador" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Component id="ensambladorLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="qttyGuionistasNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="addGuionista" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="qttyEscenariosNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="addEscenarios" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="qttyAnimadoresNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="addAnimador" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="qttyDobladoresNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="addDoblaje" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="qttyGuionistasPlotTwistsNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="addPlotTwist" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="qttyEnsambladoresNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="addEnsamblador" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="qttyDirectoresNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyProjectsManagersNick" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="capsPlotTwistReadyLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="qttyPlotTwistsCapsReadyNick" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="capsReadyLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="qttyStandardCapsReadyNick" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="pmStatusLabel" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      <Component id="directorStatusLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="directorStatus" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pmStatus" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="plotTwistsSavedLabel4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyPlotTwistsSavedNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="plotTwistsMaxLabel4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyPlotTwistsMaxNick" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="doblajesSavedLabel3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyDoblajesSavedNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="doblajesMaxLabel3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyDoblajesMaxNick" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="AnimacionesSavedLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyAnimacionesSavedNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="AnimacionesMaxLabel2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyAnimacionesMaxNick" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="EscenariosSavedLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyEscenariosSavedNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="EscenariosMaxLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyEscenariosMaxNick" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="GuionesSavedLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyGuionesSavedNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="GuionesMaxLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="qttyGuionesMaxNick" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="93" pref="93" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="gananciaLabelText" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="gananciasLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="costosLabelText" min="-2" max="-2" attributes="0"/>
+                                          <Component id="costosLabelText1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="costosLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="utilidadesLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="109" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="310" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="guionistasLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyGuionistasNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeGuionista" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addGuionista" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="GuionesSavedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyGuionesSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="GuionesMaxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyGuionesMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="gananciaLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="gananciasLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="costosLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="costosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="escenariosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyEscenariosNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeEscenarios" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addEscenarios" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="EscenariosSavedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyEscenariosSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="EscenariosMaxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyEscenariosMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="costosLabelText1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="utilidadesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="animadorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyAnimadoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeAnimador" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addAnimador" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="AnimacionesSavedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyAnimacionesSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="AnimacionesMaxLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyAnimacionesMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="doblajeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyDobladoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeDoblaje" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addDoblaje" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="doblajesSavedLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyDoblajesSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="doblajesMaxLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyDoblajesMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="plotTwistLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyGuionistasPlotTwistsNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="removePlotTwist" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addPlotTwist" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="plotTwistsSavedLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyPlotTwistsSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="plotTwistsMaxLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyPlotTwistsMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ensambladorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyEnsambladoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeEnsamblador" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addEnsamblador" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="38" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="capsReadyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyStandardCapsReadyNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="capsPlotTwistReadyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyPlotTwistsCapsReadyNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyProjectsManagersNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pmStatusLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pmStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyDirectoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="directorStatusLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="directorStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="NICKELODEON"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="guionistasLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guionistas:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="escenariosLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dise&#xf1;ador de escenarios:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="animadorLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Animador de personajes:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="doblajeLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Actores de doblaje:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="plotTwistLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guionista de PlotTwist:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ensambladorLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ensambladores:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyGuionistasNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyEscenariosNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyAnimadoresNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyDobladoresNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyGuionistasPlotTwistsNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyEnsambladoresNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeGuionista">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeGuionistaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addGuionista">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addGuionistaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeEscenarios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeEscenariosActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addEscenarios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addEscenariosActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeAnimador">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeAnimadorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addAnimador">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addAnimadorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeDoblaje">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDoblajeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addDoblaje">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addDoblajeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="removePlotTwist">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removePlotTwistActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addPlotTwist">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addPlotTwistActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeEnsamblador">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeEnsambladorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addEnsamblador">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addEnsambladorActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Projects Managers:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Directores Ejecutivos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyProjectsManagersNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyDirectoresNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="GuionesSavedLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guiones en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyGuionesSavedNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="GuionesMaxLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyGuionesMaxNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="25"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="EscenariosSavedLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Escenarios en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyEscenariosSavedNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="EscenariosMaxLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyEscenariosMaxNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="20"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="AnimacionesSavedLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Animaciones en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyAnimacionesSavedNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="AnimacionesMaxLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyAnimacionesMaxNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="55"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="doblajesSavedLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Doblajes en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyDoblajesSavedNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="doblajesMaxLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyDoblajesMaxNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="35"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="plotTwistsSavedLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="PlotTwists en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyPlotTwistsSavedNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="plotTwistsMaxLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyPlotTwistsMaxNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="capsPlotTwistReadyLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capitulos PlotTwists Listos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="capsReadyLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capitulos Standar Listos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyStandardCapsReadyNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyPlotTwistsCapsReadyNick">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pmStatusLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Project Manager Status:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="directorStatusLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Director Status:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pmStatus">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="..."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="directorStatus">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="..."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gananciaLabelText">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ganancias Totales:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="costosLabelText">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Costos Totales:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="costosLabelText1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Utilidad Total:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gananciasLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="costosLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="utilidadesLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel3">
+        <Container class="javax.swing.JPanel" name="DisneyDash">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="tab3">
-                <Property name="tabTitle" type="java.lang.String" value="tab3"/>
+              <JTabbedPaneConstraints tabName="DisneyChannel">
+                <Property name="tabTitle" type="java.lang.String" value="DisneyChannel"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>

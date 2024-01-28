@@ -8,6 +8,7 @@ import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -87,6 +88,8 @@ public class Worker extends Thread{
     public void deleteWorker() {
         if (this.getQuantityWorkers() != 1) {
             this.setQuantityWorkers(this.quantityWorkers - 1);
+        } else {
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
         }
     }
     

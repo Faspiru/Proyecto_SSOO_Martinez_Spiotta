@@ -6,6 +6,7 @@ package Clases;
 
 import Interfaces.PruebaTabbed;
 import java.util.concurrent.Semaphore;
+import javax.swing.JLabel;
 
 /**
  *
@@ -18,9 +19,6 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        PruebaTabbed main = new PruebaTabbed();
-        main.show();
         
         int [] necessitiesNick = new int [6];
         // Cuando hagamos lo del TXT, sacamos con un .split una lista con c/valor y ya, no hace falta hacer esto
@@ -41,14 +39,15 @@ public class Main {
         
         int [] initialQuantityNick = new int[6];
         // Lo mismo aqui con lo del TXT
-        initialQuantityNick[0] = 3;
-        initialQuantityNick[1] = 3;
+        // Aqui hay que validar en algun lado de la lectura del txt que no se pongan mas de 12 trabajadores en total y ese 13 tmb tiene que ser sacado del txt pienso yo 
+        initialQuantityNick[0] = 2;
+        initialQuantityNick[1] = 2;
         initialQuantityNick[2] = 1;
         initialQuantityNick[3] = 1;
         initialQuantityNick[4] = 3;
         initialQuantityNick[5] = 3;
         
-        Company nickelodeon = new Company(necessitiesNick, daysToFinoshNick, initialQuantityNick, 3000, 450, 500);
+        Company nickelodeon = new Company(necessitiesNick, daysToFinoshNick, initialQuantityNick, 12, 3000, 450000, 500000, 5);
         
         
         int [] necessitiesD = new int [6];
@@ -77,7 +76,14 @@ public class Main {
         initialQuantityD[4] = 1;
         initialQuantityD[5] = 1;
         
-        // Company disney = new Company(necessitiesD, daysToFinoshD, initialQuantityD, 3000, 250, 600);
+        Company disney = new Company(necessitiesD, daysToFinoshD, initialQuantityD, 13, 3000, 250000, 600000, 5);
+//        
+        PruebaTabbed main = new PruebaTabbed(nickelodeon, disney);
+        main.show();
+        
+        
+        // Aqui se tienen que pasar las dos companys como parametro
+        
         
     }
     

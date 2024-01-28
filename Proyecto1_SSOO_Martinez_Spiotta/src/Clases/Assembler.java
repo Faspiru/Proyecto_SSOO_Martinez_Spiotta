@@ -33,7 +33,7 @@ public class Assembler extends Thread{
     @Override
     public void run(){
         while(true) {
-            try {
+            try {  
                 paySalary();
                 if (daysCounter == 0){
                     if (check()){
@@ -60,7 +60,6 @@ public class Assembler extends Thread{
             try {
                 this.mutex.acquire(); //wait
                 this.drive.addChapter(this.quantityWorkers); //critica
-                
                 this.mutex.release(); // signal
                 this.daysCounter = 0;
             } catch (InterruptedException ex) {
@@ -91,4 +90,71 @@ public class Assembler extends Thread{
     public void addWorker(){
         this.quantityWorkers = this.quantityWorkers + 1;
     }
+
+    public float getSalaryAcumulate() {
+        return salaryAcumulate;
+    }
+
+    public void setSalaryAcumulate(float salaryAcumulate) {
+        this.salaryAcumulate = salaryAcumulate;
+    }
+
+    public int getDayDuration() {
+        return dayDuration;
+    }
+
+    public void setDayDuration(int dayDuration) {
+        this.dayDuration = dayDuration;
+    }
+
+    public int getQuantityWorkers() {
+        return quantityWorkers;
+    }
+
+    public void setQuantityWorkers(int quantityWorkers) {
+        this.quantityWorkers = quantityWorkers;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public Drive getDrive() {
+        return drive;
+    }
+
+    public void setDrive(Drive drive) {
+        this.drive = drive;
+    }
+
+    public int getDaysCounter() {
+        return daysCounter;
+    }
+
+    public void setDaysCounter(int daysCounter) {
+        this.daysCounter = daysCounter;
+    }
+
+    public int getDaysToFinishWork() {
+        return daysToFinishWork;
+    }
+
+    public void setDaysToFinishWork(int daysToFinishWork) {
+        this.daysToFinishWork = daysToFinishWork;
+    }
+
+    public Semaphore getMutex() {
+        return mutex;
+    }
+
+    public void setMutex(Semaphore mutex) {
+        this.mutex = mutex;
+    }
+    
+    
+    
 }
