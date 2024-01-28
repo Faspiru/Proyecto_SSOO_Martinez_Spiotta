@@ -23,7 +23,11 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" min="-2" pref="1029" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -49,299 +53,258 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
+                              <EmptySpace min="119" pref="119" max="-2" attributes="0"/>
+                              <Component id="guionistasLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="55" pref="55" max="-2" attributes="0"/>
+                              <Component id="removeGuionista2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="GuionistasNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addGuionista2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="252" pref="252" max="-2" attributes="0"/>
+                              <Component id="guionistasLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="55" pref="55" max="-2" attributes="0"/>
+                              <Component id="removeGuionista3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="GuionistasDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addGuionista3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="73" pref="73" max="-2" attributes="0"/>
+                              <Component id="escenariosLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="removeEscenarios1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="EscenariosNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addEscenarios1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="206" pref="206" max="-2" attributes="0"/>
+                              <Component id="escenariosLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="removeEscenarios2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="EscenariosDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addEscenarios2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="76" pref="76" max="-2" attributes="0"/>
+                              <Component id="animadorLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="removeAnimador1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="AnimadoresNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addAnimador1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="209" pref="209" max="-2" attributes="0"/>
+                              <Component id="animadorLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="removeAnimador2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="AnimadoresDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addAnimador2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="97" pref="97" max="-2" attributes="0"/>
+                              <Component id="doblajeLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                              <Component id="removeDoblaje1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="DobladoresNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addDoblaje1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="230" pref="230" max="-2" attributes="0"/>
+                              <Component id="doblajeLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                              <Component id="removeDoblaje2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="DobladoresDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addDoblaje2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="87" pref="87" max="-2" attributes="0"/>
+                              <Component id="plotTwistLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="removePlotTwist1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="GuionistasPlotTwistsNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addPlotTwist1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="220" pref="220" max="-2" attributes="0"/>
+                              <Component id="plotTwistLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="removePlotTwist2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="GuionistasPlotTwistsDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addPlotTwist2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="105" pref="105" max="-2" attributes="0"/>
+                              <Component id="ensambladorLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                              <Component id="removeEnsamblador1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="EnsambladoresNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addEnsamblador1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="238" pref="238" max="-2" attributes="0"/>
+                              <Component id="ensambladorLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                              <Component id="removeEnsamblador2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="EnsambladoresDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addEnsamblador2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="113" pref="113" max="-2" attributes="0"/>
                               <Component id="dayDuration" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                               <Component id="removeDia" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                              <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                               <Component id="dia" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                               <Component id="addDia" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                                  <Component id="doblajeLabel1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="animadorLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="escenariosLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="guionistasLabel1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <Component id="plotTwistLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="removeGuionista2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeEscenarios1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="removeDoblaje1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeAnimador1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removePlotTwist1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeEnsamblador1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                      <Component id="ensambladorLabel1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="GuionistasNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addGuionista2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="EscenariosNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addEscenarios1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="AnimadoresNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addAnimador1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="DobladoresNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addDoblaje1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="GuionistasPlotTwistsNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addPlotTwist1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="EnsambladoresNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addEnsamblador1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                                  <Component id="doblajeLabel2" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="animadorLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="escenariosLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="guionistasLabel2" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <Component id="plotTwistLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="removeGuionista3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeEscenarios2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="removeDoblaje2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeAnimador2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removePlotTwist2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeEnsamblador2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                      <Component id="ensambladorLabel2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="GuionistasDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addGuionista3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="EscenariosDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addEscenarios2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="AnimadoresDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addAnimador2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="DobladoresDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addDoblaje2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="GuionistasPlotTwistsDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addPlotTwist2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="EnsambladoresDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addEnsamblador2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                              <EmptySpace min="69" pref="69" max="-2" attributes="0"/>
                               <Component id="txt" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="159" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="deadline" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                               <Component id="removeAmmount" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                              <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                               <Component id="ammount" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                               <Component id="addAmmount" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="205" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="169" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="54" pref="54" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeGuionista2" min="-2" max="-2" attributes="0"/>
+                          <Component id="addGuionista2" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeGuionista3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addGuionista3" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="guionistasLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="GuionistasDisney" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeGuionista3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addGuionista3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="25" pref="25" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="escenariosLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="EscenariosDisney" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeEscenarios2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addEscenarios2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="animadorLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="AnimadoresDisney" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeAnimador2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addAnimador2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="doblajeLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="DobladoresDisney" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeDoblaje2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addDoblaje2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="plotTwistLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="GuionistasPlotTwistsDisney" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removePlotTwist2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addPlotTwist2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="ensambladorLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="EnsambladoresDisney" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeEnsamblador2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addEnsamblador2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="guionistasLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="GuionistasNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeGuionista2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addGuionista2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="25" pref="25" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="escenariosLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="EscenariosNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeEscenarios1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addEscenarios1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="animadorLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="AnimadoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeAnimador1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addAnimador1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="doblajeLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="DobladoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeDoblaje1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addDoblaje1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="plotTwistLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="GuionistasPlotTwistsNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removePlotTwist1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addPlotTwist1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="ensambladorLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="EnsambladoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="removeEnsamblador1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="addEnsamblador1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="guionistasLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="GuionistasNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="guionistasLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="GuionistasDisney" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="dayDuration" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="dia" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="removeDia" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addDia" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="3" groupAlignment="3" attributes="0">
-                              <Component id="deadline" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="ammount" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="removeAmmount" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="addAmmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="25" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeEscenarios1" min="-2" max="-2" attributes="0"/>
+                          <Component id="addEscenarios1" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeEscenarios2" min="-2" max="-2" attributes="0"/>
+                          <Component id="addEscenarios2" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="escenariosLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EscenariosNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="escenariosLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EscenariosDisney" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Component id="txt" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="155" max="32767" attributes="0"/>
+                      <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeAnimador1" min="-2" max="-2" attributes="0"/>
+                          <Component id="addAnimador1" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeAnimador2" min="-2" max="-2" attributes="0"/>
+                          <Component id="addAnimador2" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="animadorLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AnimadoresNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="animadorLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AnimadoresDisney" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeDoblaje1" min="-2" max="-2" attributes="0"/>
+                          <Component id="addDoblaje1" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeDoblaje2" min="-2" max="-2" attributes="0"/>
+                          <Component id="addDoblaje2" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="doblajeLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DobladoresNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="doblajeLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DobladoresDisney" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removePlotTwist1" min="-2" max="-2" attributes="0"/>
+                          <Component id="addPlotTwist1" min="-2" max="-2" attributes="0"/>
+                          <Component id="removePlotTwist2" min="-2" max="-2" attributes="0"/>
+                          <Component id="addPlotTwist2" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="plotTwistLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="GuionistasPlotTwistsNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="plotTwistLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="GuionistasPlotTwistsDisney" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeEnsamblador1" min="-2" max="-2" attributes="0"/>
+                          <Component id="addEnsamblador1" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeEnsamblador2" min="-2" max="-2" attributes="0"/>
+                          <Component id="addEnsamblador2" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ensambladorLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EnsambladoresNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ensambladorLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EnsambladoresDisney" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeDia" min="-2" max="-2" attributes="0"/>
+                          <Component id="addDia" min="-2" max="-2" attributes="0"/>
+                          <Component id="txt" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeAmmount" min="-2" max="-2" attributes="0"/>
+                          <Component id="addAmmount" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="dayDuration" min="-2" max="-2" attributes="0"/>
+                                  <Component id="dia" min="-2" max="-2" attributes="0"/>
+                                  <Component id="deadline" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ammount" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -733,304 +696,373 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="427" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                                  <Component id="doblajeLabel" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="animadorLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="escenariosLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="guionistasLabel" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <Component id="plotTwistLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="removeGuionista" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeEscenarios" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="removeDoblaje" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeAnimador" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removePlotTwist" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="removeEnsamblador" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                      <Component id="ensambladorLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="qttyGuionistasNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addGuionista" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="qttyEscenariosNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addEscenarios" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="qttyAnimadoresNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addAnimador" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="qttyDobladoresNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addDoblaje" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="qttyGuionistasPlotTwistsNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addPlotTwist" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="qttyEnsambladoresNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="addEnsamblador" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="qttyDirectoresNick" min="-2" max="-2" attributes="0"/>
-                                  <Component id="qttyProjectsManagersNick" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="capsPlotTwistReadyLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="qttyPlotTwistsCapsReadyNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="454" pref="454" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="capsReadyLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="qttyStandardCapsReadyNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="54" pref="54" max="-2" attributes="0"/>
+                              <Component id="doblajeLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                              <Component id="removeDoblaje" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="qttyDobladoresNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addDoblaje" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                              <Component id="doblajesSavedLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Component id="qttyDoblajesSavedNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                              <Component id="doblajesMaxLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Component id="qttyDoblajesMaxNick" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="62" pref="62" max="-2" attributes="0"/>
+                              <Component id="ensambladorLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                              <Component id="removeEnsamblador" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="qttyEnsambladoresNick" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addEnsamblador" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="pmStatusLabel" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                      <Component id="directorStatusLabel" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="directorStatus" min="-2" max="-2" attributes="0"/>
-                                  <Component id="pmStatus" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
+                                      <Component id="plotTwistLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                      <Component id="removePlotTwist" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="qttyGuionistasPlotTwistsNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="addPlotTwist" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
                                       <Component id="plotTwistsSavedLabel4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="qttyPlotTwistsSavedNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
                                       <Component id="plotTwistsMaxLabel4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="qttyPlotTwistsMaxNick" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="doblajesSavedLabel3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="qttyDoblajesSavedNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="doblajesMaxLabel3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="qttyDoblajesMaxNick" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="AnimacionesSavedLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="qttyAnimacionesSavedNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="AnimacionesMaxLabel2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="qttyAnimacionesMaxNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="305" pref="305" max="-2" attributes="0"/>
+                                      <Component id="capsReadyLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="qttyStandardCapsReadyNick" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                                      <Component id="qttyProjectsManagersNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="66" pref="66" max="-2" attributes="0"/>
+                                      <Component id="pmStatusLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                      <Component id="pmStatus" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
+                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                                      <Component id="qttyDirectoresNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
+                                      <Component id="directorStatusLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="41" pref="41" max="-2" attributes="0"/>
+                                      <Component id="directorStatus" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="305" pref="305" max="-2" attributes="0"/>
+                                      <Component id="capsPlotTwistReadyLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="qttyPlotTwistsCapsReadyNick" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="faultsLabelText" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="faultsLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="discountedLabelText" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="discountedLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="qttyPlotTwistsMaxNick" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                                      <Component id="guionistasLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="55" pref="55" max="-2" attributes="0"/>
+                                      <Component id="removeGuionista" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="qttyGuionistasNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="addGuionista" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                                      <Component id="GuionesSavedLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                      <Component id="qttyGuionesSavedNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                      <Component id="GuionesMaxLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="qttyGuionesMaxNick" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="escenariosLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                      <Component id="removeEscenarios" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="qttyEscenariosNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="addEscenarios" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
                                       <Component id="EscenariosSavedLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="qttyEscenariosSavedNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
                                       <Component id="EscenariosMaxLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="qttyEscenariosMaxNick" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="GuionesSavedLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="qttyGuionesSavedNick" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="GuionesMaxLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="qttyGuionesMaxNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                      <Component id="animadorLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                      <Component id="removeAnimador" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="qttyAnimadoresNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="addAnimador" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                                      <Component id="AnimacionesSavedLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                      <Component id="qttyAnimacionesSavedNick" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                      <Component id="AnimacionesMaxLabel2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                      <Component id="qttyAnimacionesMaxNick" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="93" pref="93" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="deadlineLabelText" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="deadlineLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="gananciaLabelText" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="gananciasLabel" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="costosLabelText" min="-2" max="-2" attributes="0"/>
-                                          <Component id="costosLabelText1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="costosLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="utilidadesLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="costosLabelText1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="utilidadesLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="costosLabelText" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="costosLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="daysPassedLabelN" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="109" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="guionistasLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyGuionistasNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="removeGuionista" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addGuionista" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="GuionesSavedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyGuionesSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="GuionesMaxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyGuionesMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="gananciaLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="gananciasLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="removeGuionista" min="-2" max="-2" attributes="0"/>
+                                  <Component id="addGuionista" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="guionistasLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyGuionistasNick" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GuionesSavedLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyGuionesSavedNick" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="GuionesMaxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="qttyGuionesMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="removeEscenarios" min="-2" max="-2" attributes="0"/>
+                                  <Component id="addEscenarios" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="escenariosLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyEscenariosNick" min="-2" max="-2" attributes="0"/>
+                                          <Component id="EscenariosSavedLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyEscenariosSavedNick" min="-2" max="-2" attributes="0"/>
+                                          <Component id="EscenariosMaxLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyEscenariosMaxNick" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="gananciaLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gananciasLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="costosLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="costosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="costosLabelText1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="utilidadesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="deadlineLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="deadlineLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="costosLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="costosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="removeAnimador" min="-2" max="-2" attributes="0"/>
+                                  <Component id="addAnimador" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="animadorLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyAnimadoresNick" min="-2" max="-2" attributes="0"/>
+                                          <Component id="AnimacionesSavedLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyAnimacionesSavedNick" min="-2" max="-2" attributes="0"/>
+                                          <Component id="AnimacionesMaxLabel2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyAnimacionesMaxNick" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="daysPassedLabelN" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="escenariosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyEscenariosNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="removeEscenarios" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addEscenarios" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="EscenariosSavedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyEscenariosSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="EscenariosMaxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyEscenariosMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="costosLabelText1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="utilidadesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeDoblaje" min="-2" max="-2" attributes="0"/>
+                          <Component id="addDoblaje" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="doblajeLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyDobladoresNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="doblajesSavedLabel3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyDoblajesSavedNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="doblajesMaxLabel3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyDoblajesMaxNick" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="animadorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyAnimadoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="removeAnimador" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addAnimador" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="AnimacionesSavedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyAnimacionesSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="AnimacionesMaxLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyAnimacionesMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removePlotTwist" min="-2" max="-2" attributes="0"/>
+                          <Component id="addPlotTwist" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="plotTwistLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyGuionistasPlotTwistsNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="plotTwistsSavedLabel4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyPlotTwistsSavedNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="plotTwistsMaxLabel4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyPlotTwistsMaxNick" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="doblajeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyDobladoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="removeDoblaje" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addDoblaje" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="doblajesSavedLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyDoblajesSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="doblajesMaxLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyDoblajesMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeEnsamblador" min="-2" max="-2" attributes="0"/>
+                          <Component id="addEnsamblador" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ensambladorLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyEnsambladoresNick" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="plotTwistLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyGuionistasPlotTwistsNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="removePlotTwist" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addPlotTwist" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="plotTwistsSavedLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyPlotTwistsSavedNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="plotTwistsMaxLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyPlotTwistsMaxNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="capsReadyLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyStandardCapsReadyNick" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="ensambladorLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyEnsambladoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="removeEnsamblador" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addEnsamblador" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="38" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="capsReadyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyStandardCapsReadyNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="capsPlotTwistReadyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyPlotTwistsCapsReadyNick" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="capsPlotTwistReadyLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyPlotTwistsCapsReadyNick" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyProjectsManagersNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="pmStatusLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="pmStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyProjectsManagersNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pmStatusLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pmStatus" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyDirectoresNick" min="-2" max="-2" attributes="0"/>
+                                  <Component id="directorStatusLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="directorStatus" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="faultsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="faultsLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="discountedLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="discountedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="qttyDirectoresNick" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="directorStatusLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="directorStatus" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1387,6 +1419,46 @@
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JLabel" name="deadlineLabelText">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Deadline:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="deadlineLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="faultsLabelText">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Faltas del Project Manager:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="faultsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="discountedLabelText">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dinero Descontado al Project Manager:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="discountedLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dias totales transcurridos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="daysPassedLabelN">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="DisneyDash">
@@ -1401,25 +1473,869 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="543" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="454" pref="454" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="62" pref="62" max="-2" attributes="0"/>
+                              <Component id="ensambladorLabelDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                              <Component id="removeEnsambladorDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="qttyEnsambladoresDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addEnsambladorDisney" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
+                              <Component id="plotTwistLabelDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="removePlotTwistDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="qttyGuionistasPlotTwistsDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="addPlotTwistDisney" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                              <Component id="plotTwistsSavedLabelD" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Component id="qttyPlotTwistsSavedDisney" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="305" pref="305" max="-2" attributes="0"/>
+                              <Component id="capsReadyLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="qttyStandardCapsReadyDisney" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                              <Component id="qttyProjectsManagersNick1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="66" pref="66" max="-2" attributes="0"/>
+                              <Component id="pmStatusLabelD" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                              <Component id="pmStatusDisney" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                              <Component id="qttyDirectoresNick1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
+                              <Component id="directorStatusLabelD" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="41" pref="41" max="-2" attributes="0"/>
+                              <Component id="directorStatusDisney" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="305" pref="305" max="-2" attributes="0"/>
+                              <Component id="capsPlotTwistReadyLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                              <Component id="qttyPlotTwistsCapsReadyDisney" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                                              <Component id="guionistasLabelDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="55" pref="55" max="-2" attributes="0"/>
+                                              <Component id="removeGuionistaDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                              <Component id="qttyGuionistasDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                              <Component id="addGuionistaDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                                              <Component id="GuionesSavedLabelD" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="qttyGuionesSavedDisney" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                              <Component id="escenariosLabelDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                              <Component id="removeEscenariosDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                              <Component id="qttyEscenariosDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                              <Component id="addEscenariosDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                                              <Component id="EscenariosSavedLabelD" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                              <Component id="qttyEscenariosSavedDisney" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="EscenariosMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                              <Component id="qttyEscenariosMaxNick1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                              <Component id="GuionesMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="qttyGuionesMaxNick1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                      <Component id="animadorLabelDisney" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                      <Component id="removeAnimadorDisney" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="qttyAnimadoresDisney" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                      <Component id="addAnimadorDisney" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                                      <Component id="AnimacionesSavedLabelD" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                      <Component id="qttyAnimacionesSavedDisney" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                      <Component id="AnimacionesMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                      <Component id="qttyAnimacionesMaxNick1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="plotTwistsMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="54" pref="54" max="-2" attributes="0"/>
+                                              <Component id="doblajeLabelDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                                              <Component id="removeDoblajeDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                              <Component id="qttyDobladoresDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                              <Component id="addDoblajeDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                                              <Component id="doblajesSavedLabelD" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                              <Component id="qttyDoblajesSavedDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                              <Component id="doblajesMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="qttyDoblajesMaxNick1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyPlotTwistsMaxNick1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="deadlineLabelText1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="deadlineLabelDisney" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="costosLabelText3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="utilidadesLabelDisney" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="costosLabelText2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="costosLabelDisney" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="gananciaLabelText1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="gananciasLabelDisney" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="daysPassedLabelD" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="faultsLabelText1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="faultsLabelDisney" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="discountedLabelText1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="discountedLabelDisney" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="188" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="310" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="removeGuionistaDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="addGuionistaDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="guionistasLabelDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyGuionistasDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="GuionesSavedLabelD" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="qttyGuionesSavedDisney" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="removeEscenariosDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="addEscenariosDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="escenariosLabelDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyEscenariosDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="EscenariosSavedLabelD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="qttyEscenariosSavedDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="gananciaLabelText1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gananciasLabelDisney" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="costosLabelText2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="costosLabelDisney" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="costosLabelText3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="utilidadesLabelDisney" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="deadlineLabelText1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="deadlineLabelDisney" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="GuionesMaxLabelD" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyGuionesMaxNick1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="EscenariosMaxLabelD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyEscenariosMaxNick1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeAnimadorDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="addAnimadorDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="animadorLabelDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyAnimadoresDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AnimacionesSavedLabelD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyAnimacionesSavedDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AnimacionesMaxLabelD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyAnimacionesMaxNick1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="daysPassedLabelD" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeDoblajeDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="addDoblajeDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="doblajeLabelDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyDobladoresDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="doblajesSavedLabelD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyDoblajesSavedDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="doblajesMaxLabelD" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="qttyDoblajesMaxNick1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removePlotTwistDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="addPlotTwistDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="plotTwistLabelDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyGuionistasPlotTwistsDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="plotTwistsSavedLabelD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyPlotTwistsSavedDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="plotTwistsMaxLabelD" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="qttyPlotTwistsMaxNick1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="removeEnsambladorDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="addEnsambladorDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ensambladorLabelDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyEnsambladoresDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="capsReadyLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyStandardCapsReadyDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="capsPlotTwistReadyLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="qttyPlotTwistsCapsReadyDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyProjectsManagersNick1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pmStatusLabelD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pmStatusDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qttyDirectoresNick1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="directorStatusLabelD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="directorStatusDisney" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="faultsLabelDisney" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="faultsLabelText1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="discountedLabelText1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="discountedLabelDisney" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel1">
+            <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
+                <Property name="text" type="java.lang.String" value="Directores Ejecutivos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyProjectsManagersNick1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyPlotTwistsMaxNick1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="capsPlotTwistReadyLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capitulos PlotTwists Listos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="capsReadyLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capitulos Standar Listos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyStandardCapsReadyDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyPlotTwistsCapsReadyDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pmStatusLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Project Manager Status:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="directorStatusLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Director Status:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyDirectoresNick1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pmStatusDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="..."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="GuionesSavedLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guiones en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="directorStatusDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="..."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyGuionesSavedDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gananciaLabelText1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ganancias Totales:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="GuionesMaxLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyGuionesMaxNick1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="25"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="EscenariosSavedLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Escenarios en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyEscenariosSavedDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="EscenariosMaxLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyEscenariosMaxNick1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="20"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="AnimacionesSavedLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Animaciones en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="costosLabelText2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Costos Totales:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="costosLabelText3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Utilidad Total:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gananciasLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="costosLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="utilidadesLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="deadlineLabelText1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Deadline:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="deadlineLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="faultsLabelText1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Faltas del Project Manager:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="faultsLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="discountedLabelText1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dinero Descontado al Project Manager:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="DISNEY"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="guionistasLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guionistas:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="escenariosLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dise&#xf1;ador de escenarios:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="animadorLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Animador de personajes:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="doblajeLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Actores de doblaje:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="plotTwistLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guionista de PlotTwist:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ensambladorLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ensambladores:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyGuionistasDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="discountedLabelDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyEscenariosDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyAnimadoresDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyDobladoresDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyGuionistasPlotTwistsDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyEnsambladoresDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeGuionistaDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeGuionistaDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addGuionistaDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addGuionistaDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeEscenariosDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeEscenariosDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addEscenariosDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addEscenariosDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeAnimadorDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeAnimadorDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyAnimacionesSavedDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="AnimacionesMaxLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyAnimacionesMaxNick1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="55"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="doblajesSavedLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Doblajes en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyDoblajesSavedDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="doblajesMaxLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyDoblajesMaxNick1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="35"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="addAnimadorDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addAnimadorDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="plotTwistsSavedLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="PlotTwists en el Drive:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeDoblajeDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeDoblajeDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="qttyPlotTwistsSavedDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="addDoblajeDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addDoblajeDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="plotTwistsMaxLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capacidad M&#xe1;x:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="removePlotTwistDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removePlotTwistDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addPlotTwistDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addPlotTwistDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeEnsambladorDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeEnsambladorDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addEnsambladorDisney">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addEnsambladorDisneyActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Projects Managers:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel8">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dias totales transcurridos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="daysPassedLabelD">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="NickVSDisney">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Nick_VS_Disney">
+                <Property name="tabTitle" type="java.lang.String" value="Nick_VS_Disney"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="417" max="-2" attributes="0"/>
+                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="daysPassedLabelGrafico" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="178" max="-2" attributes="0"/>
+                              <Component id="Grafico" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="daysPassedLabelGrafico" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="Grafico" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="Grafico">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="652" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="308" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dias totales transcurridos:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="daysPassedLabelGrafico">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>

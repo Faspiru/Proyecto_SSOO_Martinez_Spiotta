@@ -25,11 +25,13 @@ public class PM extends Thread{
     // private atributo deadline 
     private int hoursCounter;
     private int minutesCounter;
+    private int daysPassedTotal; // solo para el pm, que el lo cambie 
     private JLabel[] labels;
     private Semaphore mutex;
     private Company company;
     private Semaphore mutex2;
     private Semaphore mutex3;
+    private GraphManager grafico;
  
     public PM(int dayDuration, Semaphore mutex, Semaphore mutex2, Semaphore mutex3, Company company){
         this.salaryAcumulate = 0;
@@ -39,6 +41,7 @@ public class PM extends Thread{
         this.discounted = 0;
         this.hoursCounter = 0;
         this.minutesCounter = 0;
+        this.daysPassedTotal = 0;
         this.status = "Viendo One Piece (anime)";
         this.mutex = mutex;
         this.mutex3 = mutex3;
@@ -70,6 +73,12 @@ public class PM extends Thread{
                 status = "Trabajando";
                 this.labels[0].setText(status);
                 work();
+                setDaysPassedTotal(getDaysPassedTotal() + 1);
+                this.labels[4].setText(Integer.toString(getDaysPassedTotal()));
+                if (company.getMaxWorkers() == 13) {
+                    this.labels[5].setText(Integer.toString(getDaysPassedTotal()));
+                    this.grafico.actualizarGrafico(); // Actualiza el grafico cada dia solo el pm de una compania para que no de error en la terminal
+                }
                 sleep((dayDuration/24)*8);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
@@ -106,7 +115,7 @@ public class PM extends Thread{
         try {
             this.mutex2.acquire(); //wait
             this.company.setDeadline(this.company.getDeadline() - 1); //critica
-            // LABEL DEADLINE
+            this.labels[3].setText(Integer.toString(this.company.getDeadline()));
             this.mutex2.release(); // signal
         } catch (InterruptedException ex) {
             Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
@@ -205,6 +214,29 @@ public class PM extends Thread{
     public void setDiscounted(int discounted) {
         this.discounted = discounted;
     }
+
+    /**
+     * @return the daysPassedTotal
+     */
+    public int getDaysPassedTotal() {
+        return daysPassedTotal;
+    }
+
+    /**
+     * @param daysPassedTotal the daysPassedTotal to set
+     */
+    public void setDaysPassedTotal(int daysPassedTotal) {
+        this.daysPassedTotal = daysPassedTotal;
+    }
+
+    public GraphManager getGrafico() {
+        return grafico;
+    }
+
+    public void setGrafico(GraphManager grafico) {
+        this.grafico = grafico;
+    }
+    
     
     
     

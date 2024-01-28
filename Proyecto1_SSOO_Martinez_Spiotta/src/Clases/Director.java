@@ -8,6 +8,7 @@ import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JLabel;
 
 /**
  *
@@ -28,6 +29,7 @@ public class Director extends Thread{
     private Company company;
     private int reinicioDeadline;
     private boolean directorMode;
+    private JLabel[] labels;
     
     public Director(int dayDuration, Drive drive, Semaphore mutex, Semaphore mutex2, Semaphore mutex3, Company company) {
         this.salaryAcumulate = 0;
@@ -52,7 +54,7 @@ public class Director extends Thread{
                 checkDeadline();
                 if (directorMode) {
                     status = "Enviando Capitulos";
-                    // LABEL DE STATUS DIRECTOR
+                    this.labels[0].setText(status);
                     work();
                     sleep(this.dayDuration);
                 }else{
@@ -61,14 +63,14 @@ public class Director extends Thread{
                     sleep((this.dayDuration*random)/24);
                     
                     status = "Revisando PM";
-                    // LABEL DE STATUS DIRECTOR
+                    this.labels[0].setText(status);
                     checkPM();
                     sleep((dayDuration*30)/(24*60));
                     checkPM();
                     sleep((dayDuration*5)/(24*60));                    
                     
                     status = "Labores Administrativos";
-                    // LABEL DE STATUS DIRECTOR
+                    this.labels[0].setText(status);
                     sleep((dayDuration*25)/(60*24));
                     sleep((this.dayDuration*(23-random))/24);
                 }
@@ -90,6 +92,7 @@ public class Director extends Thread{
             if (this.company.getDeadline() == 0) {
                 directorMode = true;
                 this.company.setDeadline(reinicioDeadline);
+                this.labels[1].setText(Integer.toString(this.company.getDeadline()));
             }
             this.mutex2.release(); // signal
         } catch (InterruptedException ex) {
@@ -102,7 +105,7 @@ public class Director extends Thread{
         if (this.daysCounter == this.daysToFinishWork){ // ese valor de 2 depende de la compania
             try {
                 this.mutex.acquire(); //wait
-                drive.sendChapters();
+                getDrive().sendChapters();
                 this.mutex.release(); // signal
                 this.daysCounter = 0;
                 directorMode = false;
@@ -115,8 +118,9 @@ public class Director extends Thread{
     public void checkPM(){
         if (company.getPm().getStatus().equals("Viendo One Piece (anime)")){
             company.getPm().setFault(company.getPm().getFault() + 1);
-            company.getPm().setDiscounted(company.getPm().getDiscounted()+ 100); 
-            // LABELS PARA CAMBIAR ESTOS VALORES
+            this.labels[2].setText(Integer.toString(company.getPm().getFault()));
+            company.getPm().setDiscounted(company.getPm().getDiscounted() + 100); 
+            this.labels[3].setText(Integer.toString(company.getPm().getDiscounted()));
             try {
                 this.mutex3.acquire(); //wait
                 company.getPm().setSalaryAcumulate(company.getPm().getSalaryAcumulate() - 100);//critica   
@@ -134,7 +138,27 @@ public class Director extends Thread{
     public void setSalaryAcumulate(float salaryAcumulate) {
         this.salaryAcumulate = salaryAcumulate;
     }
-    
-    
+
+    /**
+     * @return the drive
+     */
+    public Drive getDrive() {
+        return drive;
+    }
+
+    /**
+     * @return the labels
+     */
+    public JLabel[] getLabels() {
+        return labels;
+    }
+
+    /**
+     * @param labels the labels to set
+     */
+    public void setLabels(JLabel[] labels) {
+        this.labels = labels;
+    }
+ 
     
 }

@@ -67,7 +67,7 @@ public class Company extends Thread{
         this.mutex2 = new Semaphore(1);
         this.mutex3 = new Semaphore(1);
         this.deadline = deadline;
-        //startEmployees();   
+        instanceEmployees();   
     }
     
     public void costosCalculate() {
@@ -78,7 +78,7 @@ public class Company extends Thread{
         this.utilidad = this.ganancias - this.costos;
     }
     
-    public void startEmployees(){
+    public void instanceEmployees(){
         guionistas = new Worker(0, dayDuration, initialQuantity[0], drive, mutex, daysToFinishWork);
         escenarios = new Worker(1, dayDuration, initialQuantity[1], drive, mutex, daysToFinishWork);
         animadores = new Worker(2, dayDuration, initialQuantity[2], drive, mutex, daysToFinishWork);
@@ -87,7 +87,9 @@ public class Company extends Thread{
         ensambladores = new Assembler(dayDuration, initialQuantity[5], drive, mutex);
         pm = new PM(dayDuration, mutex, mutex2, mutex3, this);
         director = new Director(dayDuration, drive, mutex, mutex2, mutex3, this);
-       
+    }
+    
+    public void startEmployees() {
         guionistas.start();
         escenarios.start();
         animadores.start();
@@ -96,12 +98,11 @@ public class Company extends Thread{
         ensambladores.start();  
         pm.start();   
         director.start();//PM y Director son hilos porque ambos tienen acceso al contador del deadline  
-              
     }
     
     public void addWorkers(int type) {
         int actualWorkersCounter = (guionistas.getQuantityWorkers() + escenarios.getQuantityWorkers() + animadores.getQuantityWorkers() + dobladores.getQuantityWorkers() + guionistasPlotTwists.getQuantityWorkers() + ensambladores.getQuantityWorkers());
-        if (actualWorkersCounter < maxWorkers) {
+        if (actualWorkersCounter < getMaxWorkers()) {
             if (type == 0) {
                 guionistas.addWorker();  
             }
@@ -207,6 +208,16 @@ public class Company extends Thread{
         this.pm = pm;
     }
 
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
+    }
+    
+    
+
     public int getChapterPrice() {
         return chapterPrice;
     }
@@ -238,6 +249,21 @@ public class Company extends Thread{
     public void setDayDuration(int dayDuration) {
         this.dayDuration = dayDuration;
     }
+
+    /**
+     * @return the maxWorkers
+     */
+    public int getMaxWorkers() {
+        return maxWorkers;
+    }
+
+    /**
+     * @param maxWorkers the maxWorkers to set
+     */
+    public void setMaxWorkers(int maxWorkers) {
+        this.maxWorkers = maxWorkers;
+    }
+    
     
     
     
