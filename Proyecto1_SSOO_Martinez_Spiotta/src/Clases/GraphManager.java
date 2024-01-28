@@ -26,7 +26,7 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 public class GraphManager {
     private XYSeries seriesNickelodeon;
     private XYSeries seriesDisney;
-    private XYPlot plot;
+    //private XYPlot plot;
     private JPanel grafico;
     private Company nickelodeon;
     private Company disney;
@@ -44,12 +44,6 @@ public class GraphManager {
         
         XYPlot plot = lineChart.getXYPlot();
 
-        // Declarar un NumberAxis para el eje X
-//        NumberAxis xAxis = new NumberAxis("Days");
-//        xAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits()); // Mostrar números enteros en los ticks
-//
-//        plot.setDomainAxis(xAxis);
-
         // Crear un renderizador de series personalizado (LineAndShapeRenderer para gráficos de líneas)
         XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
         renderer.setSeriesPaint(0, Color.ORANGE);  // Serie 0 (Nickelodeon) en naranja
@@ -64,16 +58,9 @@ public class GraphManager {
         plot.setRenderer(renderer);
 
         chartpanel.setPreferredSize(new java.awt.Dimension(700, 500));
-        //int delay = nickelodeon.getDayDuration();
         grafico.setLayout(new BorderLayout());
         grafico.add(chartpanel, BorderLayout.CENTER);
         grafico.validate();
-//        new Timer(delay, new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent evt) {
-//                actualizarGrafico();
-//            }
-//        }).start();
     }
 
     private XYSeriesCollection getDataset() {
@@ -85,8 +72,6 @@ public class GraphManager {
 
     // Método para actualizar las utilidades y el tiempo en el gráfico
     public void actualizarGrafico() {
-        //nt tiempoActual = (int) System.currentTimeMillis(); // Obtener el tiempo actual
-        System.out.println(counter);
         seriesNickelodeon.add(counter, nickelodeon.getUtilidad());
         seriesDisney.add(counter, disney.getUtilidad());
         counter ++;

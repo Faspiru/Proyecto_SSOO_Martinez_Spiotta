@@ -1585,50 +1585,50 @@
                                       </Group>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                      <Component id="animadorLabelDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                                      <Component id="removeAnimadorDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                                      <Component id="qttyAnimadoresDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                                      <Component id="addAnimadorDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
-                                      <Component id="AnimacionesSavedLabelD" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                      <Component id="qttyAnimacionesSavedDisney" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
-                                      <Component id="AnimacionesMaxLabelD" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                      <Component id="qttyAnimacionesMaxNick1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Group type="102" attributes="0">
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="plotTwistsMaxLabelD" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" attributes="0">
-                                              <EmptySpace min="54" pref="54" max="-2" attributes="0"/>
-                                              <Component id="doblajeLabelDisney" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                                              <Component id="removeDoblajeDisney" min="-2" max="-2" attributes="0"/>
+                                              <Component id="animadorLabelDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                              <Component id="removeAnimadorDisney" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                                              <Component id="qttyDobladoresDisney" min="-2" max="-2" attributes="0"/>
+                                              <Component id="qttyAnimadoresDisney" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                                              <Component id="addDoblajeDisney" min="-2" max="-2" attributes="0"/>
+                                              <Component id="addAnimadorDisney" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
-                                              <Component id="doblajesSavedLabelD" min="-2" max="-2" attributes="0"/>
+                                              <Component id="AnimacionesSavedLabelD" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                              <Component id="qttyDoblajesSavedDisney" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                              <Component id="doblajesMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                              <Component id="qttyAnimacionesSavedDisney" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                              <Component id="AnimacionesMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                              <Component id="qttyAnimacionesMaxNick1" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="qttyDoblajesMaxNick1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="qttyPlotTwistsMaxNick1" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="plotTwistsMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="doblajeLabelDisney" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                                                      <Component id="removeDoblajeDisney" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                                      <Component id="qttyDobladoresDisney" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                                      <Component id="addDoblajeDisney" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                                                      <Component id="doblajesSavedLabelD" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                                      <Component id="qttyDoblajesSavedDisney" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                                      <Component id="doblajesMaxLabelD" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="qttyDoblajesMaxNick1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="qttyPlotTwistsMaxNick1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
                                   </Group>
                               </Group>
