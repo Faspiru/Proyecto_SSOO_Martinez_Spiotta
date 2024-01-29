@@ -333,7 +333,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        ConfigurationDashboard.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         plotTwistLabel1.setText("Guionista de PlotTwist:");
+        ConfigurationDashboard.add(plotTwistLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 281, -1, -1));
 
         removePlotTwist1.setText("-");
         removePlotTwist1.addActionListener(new java.awt.event.ActionListener() {
@@ -341,6 +344,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removePlotTwist1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removePlotTwist1, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 278, -1, -1));
 
         addDoblaje1.setText("+");
         addDoblaje1.addActionListener(new java.awt.event.ActionListener() {
@@ -348,6 +352,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addDoblaje1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addDoblaje1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 221, -1, -1));
 
         addAnimador1.setText("+");
         addAnimador1.addActionListener(new java.awt.event.ActionListener() {
@@ -355,8 +360,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addAnimador1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addAnimador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 161, -1, -1));
 
         GuionistasPlotTwistsNick.setText("0");
+        ConfigurationDashboard.add(GuionistasPlotTwistsNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 281, -1, -1));
 
         removeAnimador1.setText("-");
         removeAnimador1.addActionListener(new java.awt.event.ActionListener() {
@@ -364,8 +371,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeAnimador1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeAnimador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 161, -1, -1));
 
         animadorLabel1.setText("Animador de personajes:");
+        ConfigurationDashboard.add(animadorLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 164, -1, -1));
 
         addPlotTwist1.setText("+");
         addPlotTwist1.addActionListener(new java.awt.event.ActionListener() {
@@ -373,10 +382,13 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addPlotTwist1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addPlotTwist1, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 278, -1, -1));
 
         AnimadoresNick.setText("0");
+        ConfigurationDashboard.add(AnimadoresNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 164, -1, -1));
 
         EnsambladoresNick.setText("0");
+        ConfigurationDashboard.add(EnsambladoresNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 334, -1, -1));
 
         addEnsamblador1.setText("+");
         addEnsamblador1.addActionListener(new java.awt.event.ActionListener() {
@@ -384,6 +396,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addEnsamblador1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addEnsamblador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 331, -1, -1));
 
         removeDoblaje1.setText("-");
         removeDoblaje1.addActionListener(new java.awt.event.ActionListener() {
@@ -391,10 +404,13 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeDoblaje1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeDoblaje1, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 221, -1, -1));
 
         guionistasLabel1.setText("Guionistas:");
+        ConfigurationDashboard.add(guionistasLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 57, -1, -1));
 
         EscenariosNick.setText("0");
+        ConfigurationDashboard.add(EscenariosNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 105, -1, -1));
 
         removeEscenarios1.setText("-");
         removeEscenarios1.addActionListener(new java.awt.event.ActionListener() {
@@ -402,6 +418,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeEscenarios1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeEscenarios1, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 102, -1, -1));
 
         removeGuionista2.setText("-");
         removeGuionista2.addActionListener(new java.awt.event.ActionListener() {
@@ -409,6 +426,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeGuionista2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeGuionista2, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 54, -1, -1));
 
         addGuionista2.setText("+");
         addGuionista2.addActionListener(new java.awt.event.ActionListener() {
@@ -416,12 +434,16 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addGuionista2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addGuionista2, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 54, -1, -1));
 
         doblajeLabel1.setText("Actores de doblaje:");
+        ConfigurationDashboard.add(doblajeLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 224, -1, -1));
 
         DobladoresNick.setText("0");
+        ConfigurationDashboard.add(DobladoresNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 224, -1, -1));
 
         ensambladorLabel1.setText("Ensambladores:");
+        ConfigurationDashboard.add(ensambladorLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 334, -1, -1));
 
         addEscenarios1.setText("+");
         addEscenarios1.addActionListener(new java.awt.event.ActionListener() {
@@ -429,6 +451,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addEscenarios1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addEscenarios1, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 102, -1, -1));
 
         removeEnsamblador1.setText("-");
         removeEnsamblador1.addActionListener(new java.awt.event.ActionListener() {
@@ -436,12 +459,16 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeEnsamblador1ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeEnsamblador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 331, -1, -1));
 
         GuionistasNick.setText("0");
+        ConfigurationDashboard.add(GuionistasNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 57, -1, -1));
 
         escenariosLabel1.setText("Diseñador de escenarios:");
+        ConfigurationDashboard.add(escenariosLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 105, -1, -1));
 
         guionistasLabel2.setText("Guionistas:");
+        ConfigurationDashboard.add(guionistasLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 57, -1, -1));
 
         removeGuionista3.setText("-");
         removeGuionista3.addActionListener(new java.awt.event.ActionListener() {
@@ -449,16 +476,22 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeGuionista3ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeGuionista3, new org.netbeans.lib.awtextra.AbsoluteConstraints(673, 54, -1, -1));
 
         escenariosLabel2.setText("Diseñador de escenarios:");
+        ConfigurationDashboard.add(escenariosLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(503, 105, -1, -1));
 
         animadorLabel2.setText("Animador de personajes:");
+        ConfigurationDashboard.add(animadorLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 164, -1, -1));
 
         doblajeLabel2.setText("Actores de doblaje:");
+        ConfigurationDashboard.add(doblajeLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 224, -1, -1));
 
         plotTwistLabel2.setText("Guionista de PlotTwist:");
+        ConfigurationDashboard.add(plotTwistLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(521, 281, -1, -1));
 
         ensambladorLabel2.setText("Ensambladores:");
+        ConfigurationDashboard.add(ensambladorLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 334, -1, -1));
 
         removeEnsamblador2.setText("-");
         removeEnsamblador2.addActionListener(new java.awt.event.ActionListener() {
@@ -466,8 +499,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeEnsamblador2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeEnsamblador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(665, 331, -1, -1));
 
         EnsambladoresDisney.setText("0");
+        ConfigurationDashboard.add(EnsambladoresDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 334, -1, -1));
 
         addEnsamblador2.setText("+");
         addEnsamblador2.addActionListener(new java.awt.event.ActionListener() {
@@ -475,6 +510,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addEnsamblador2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addEnsamblador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(718, 331, -1, -1));
 
         addPlotTwist2.setText("+");
         addPlotTwist2.addActionListener(new java.awt.event.ActionListener() {
@@ -482,8 +518,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addPlotTwist2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addPlotTwist2, new org.netbeans.lib.awtextra.AbsoluteConstraints(712, 278, -1, -1));
 
         GuionistasPlotTwistsDisney.setText("0");
+        ConfigurationDashboard.add(GuionistasPlotTwistsDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(694, 281, -1, -1));
 
         removePlotTwist2.setText("-");
         removePlotTwist2.addActionListener(new java.awt.event.ActionListener() {
@@ -491,6 +529,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removePlotTwist2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removePlotTwist2, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 278, -1, -1));
 
         removeDoblaje2.setText("-");
         removeDoblaje2.addActionListener(new java.awt.event.ActionListener() {
@@ -498,6 +537,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeDoblaje2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeDoblaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(663, 221, -1, -1));
 
         removeAnimador2.setText("-");
         removeAnimador2.addActionListener(new java.awt.event.ActionListener() {
@@ -505,6 +545,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeAnimador2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeAnimador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 161, -1, -1));
 
         removeEscenarios2.setText("-");
         removeEscenarios2.addActionListener(new java.awt.event.ActionListener() {
@@ -512,14 +553,19 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeEscenarios2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeEscenarios2, new org.netbeans.lib.awtextra.AbsoluteConstraints(651, 102, -1, -1));
 
         GuionistasDisney.setText("0");
+        ConfigurationDashboard.add(GuionistasDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 57, -1, -1));
 
         EscenariosDisney.setText("0");
+        ConfigurationDashboard.add(EscenariosDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(686, 105, -1, -1));
 
         AnimadoresDisney.setText("0");
+        ConfigurationDashboard.add(AnimadoresDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(694, 164, -1, -1));
 
         DobladoresDisney.setText("0");
+        ConfigurationDashboard.add(DobladoresDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(698, 224, -1, -1));
 
         addDoblaje2.setText("+");
         addDoblaje2.addActionListener(new java.awt.event.ActionListener() {
@@ -527,6 +573,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addDoblaje2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addDoblaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(716, 221, -1, -1));
 
         addAnimador2.setText("+");
         addAnimador2.addActionListener(new java.awt.event.ActionListener() {
@@ -534,6 +581,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addAnimador2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addAnimador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(712, 161, -1, -1));
 
         addEscenarios2.setText("+");
         addEscenarios2.addActionListener(new java.awt.event.ActionListener() {
@@ -541,6 +589,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addEscenarios2ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addEscenarios2, new org.netbeans.lib.awtextra.AbsoluteConstraints(704, 102, -1, -1));
 
         addGuionista3.setText("+");
         addGuionista3.addActionListener(new java.awt.event.ActionListener() {
@@ -548,8 +597,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addGuionista3ActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addGuionista3, new org.netbeans.lib.awtextra.AbsoluteConstraints(726, 54, -1, -1));
 
         dayDuration.setText("Duracion de un dia");
+        ConfigurationDashboard.add(dayDuration, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 415, -1, -1));
 
         removeDia.setText("-");
         removeDia.addActionListener(new java.awt.event.ActionListener() {
@@ -557,8 +608,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeDiaActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 412, -1, -1));
 
         dia.setText("0");
+        ConfigurationDashboard.add(dia, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 415, -1, -1));
 
         addDia.setText("+");
         addDia.addActionListener(new java.awt.event.ActionListener() {
@@ -566,8 +619,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addDiaActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 412, -1, -1));
 
         deadline.setText("Deadline");
+        ConfigurationDashboard.add(deadline, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 415, -1, -1));
 
         removeAmmount.setText("-");
         removeAmmount.addActionListener(new java.awt.event.ActionListener() {
@@ -575,8 +630,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeAmmountActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(removeAmmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(674, 412, -1, -1));
 
         ammount.setText("0");
+        ConfigurationDashboard.add(ammount, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 415, -1, -1));
 
         addAmmount.setText("+");
         addAmmount.addActionListener(new java.awt.event.ActionListener() {
@@ -584,6 +641,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addAmmountActionPerformed(evt);
             }
         });
+        ConfigurationDashboard.add(addAmmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(726, 412, -1, -1));
 
         txt.setText("Guardar");
         txt.addActionListener(new java.awt.event.ActionListener() {
@@ -591,261 +649,50 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 txtActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout ConfigurationDashboardLayout = new javax.swing.GroupLayout(ConfigurationDashboard);
-        ConfigurationDashboard.setLayout(ConfigurationDashboardLayout);
-        ConfigurationDashboardLayout.setHorizontalGroup(
-            ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(guionistasLabel1)
-                        .addGap(55, 55, 55)
-                        .addComponent(removeGuionista2)
-                        .addGap(12, 12, 12)
-                        .addComponent(GuionistasNick)
-                        .addGap(12, 12, 12)
-                        .addComponent(addGuionista2)
-                        .addGap(252, 252, 252)
-                        .addComponent(guionistasLabel2)
-                        .addGap(55, 55, 55)
-                        .addComponent(removeGuionista3)
-                        .addGap(12, 12, 12)
-                        .addComponent(GuionistasDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(addGuionista3))
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(73, 73, 73)
-                        .addComponent(escenariosLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(removeEscenarios1)
-                        .addGap(12, 12, 12)
-                        .addComponent(EscenariosNick)
-                        .addGap(12, 12, 12)
-                        .addComponent(addEscenarios1)
-                        .addGap(206, 206, 206)
-                        .addComponent(escenariosLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(removeEscenarios2)
-                        .addGap(12, 12, 12)
-                        .addComponent(EscenariosDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(addEscenarios2))
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(animadorLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(removeAnimador1)
-                        .addGap(12, 12, 12)
-                        .addComponent(AnimadoresNick)
-                        .addGap(12, 12, 12)
-                        .addComponent(addAnimador1)
-                        .addGap(209, 209, 209)
-                        .addComponent(animadorLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(removeAnimador2)
-                        .addGap(12, 12, 12)
-                        .addComponent(AnimadoresDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(addAnimador2))
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addComponent(doblajeLabel1)
-                        .addGap(29, 29, 29)
-                        .addComponent(removeDoblaje1)
-                        .addGap(12, 12, 12)
-                        .addComponent(DobladoresNick)
-                        .addGap(12, 12, 12)
-                        .addComponent(addDoblaje1)
-                        .addGap(230, 230, 230)
-                        .addComponent(doblajeLabel2)
-                        .addGap(29, 29, 29)
-                        .addComponent(removeDoblaje2)
-                        .addGap(12, 12, 12)
-                        .addComponent(DobladoresDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(addDoblaje2))
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(plotTwistLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(removePlotTwist1)
-                        .addGap(12, 12, 12)
-                        .addComponent(GuionistasPlotTwistsNick)
-                        .addGap(12, 12, 12)
-                        .addComponent(addPlotTwist1)
-                        .addGap(220, 220, 220)
-                        .addComponent(plotTwistLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(removePlotTwist2)
-                        .addGap(12, 12, 12)
-                        .addComponent(GuionistasPlotTwistsDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(addPlotTwist2))
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(105, 105, 105)
-                        .addComponent(ensambladorLabel1)
-                        .addGap(40, 40, 40)
-                        .addComponent(removeEnsamblador1)
-                        .addGap(12, 12, 12)
-                        .addComponent(EnsambladoresNick)
-                        .addGap(12, 12, 12)
-                        .addComponent(addEnsamblador1)
-                        .addGap(238, 238, 238)
-                        .addComponent(ensambladorLabel2)
-                        .addGap(40, 40, 40)
-                        .addComponent(removeEnsamblador2)
-                        .addGap(12, 12, 12)
-                        .addComponent(EnsambladoresDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(addEnsamblador2))
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(113, 113, 113)
-                        .addComponent(dayDuration)
-                        .addGap(18, 18, 18)
-                        .addComponent(removeDia)
-                        .addGap(11, 11, 11)
-                        .addComponent(dia)
-                        .addGap(12, 12, 12)
-                        .addComponent(addDia)
-                        .addGap(69, 69, 69)
-                        .addComponent(txt)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(deadline)
-                        .addGap(18, 18, 18)
-                        .addComponent(removeAmmount)
-                        .addGap(11, 11, 11)
-                        .addComponent(ammount)
-                        .addGap(12, 12, 12)
-                        .addComponent(addAmmount)))
-                .addGap(169, 169, 169))
-        );
-        ConfigurationDashboardLayout.setVerticalGroup(
-            ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeGuionista2)
-                    .addComponent(addGuionista2)
-                    .addComponent(removeGuionista3)
-                    .addComponent(addGuionista3)
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(guionistasLabel1)
-                            .addComponent(GuionistasNick)
-                            .addComponent(guionistasLabel2)
-                            .addComponent(GuionistasDisney))))
-                .addGap(25, 25, 25)
-                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeEscenarios1)
-                    .addComponent(addEscenarios1)
-                    .addComponent(removeEscenarios2)
-                    .addComponent(addEscenarios2)
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(escenariosLabel1)
-                            .addComponent(EscenariosNick)
-                            .addComponent(escenariosLabel2)
-                            .addComponent(EscenariosDisney))))
-                .addGap(36, 36, 36)
-                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeAnimador1)
-                    .addComponent(addAnimador1)
-                    .addComponent(removeAnimador2)
-                    .addComponent(addAnimador2)
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(animadorLabel1)
-                            .addComponent(AnimadoresNick)
-                            .addComponent(animadorLabel2)
-                            .addComponent(AnimadoresDisney))))
-                .addGap(37, 37, 37)
-                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeDoblaje1)
-                    .addComponent(addDoblaje1)
-                    .addComponent(removeDoblaje2)
-                    .addComponent(addDoblaje2)
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(doblajeLabel1)
-                            .addComponent(DobladoresNick)
-                            .addComponent(doblajeLabel2)
-                            .addComponent(DobladoresDisney))))
-                .addGap(34, 34, 34)
-                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removePlotTwist1)
-                    .addComponent(addPlotTwist1)
-                    .addComponent(removePlotTwist2)
-                    .addComponent(addPlotTwist2)
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(plotTwistLabel1)
-                            .addComponent(GuionistasPlotTwistsNick)
-                            .addComponent(plotTwistLabel2)
-                            .addComponent(GuionistasPlotTwistsDisney))))
-                .addGap(30, 30, 30)
-                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeEnsamblador1)
-                    .addComponent(addEnsamblador1)
-                    .addComponent(removeEnsamblador2)
-                    .addComponent(addEnsamblador2)
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ensambladorLabel1)
-                            .addComponent(EnsambladoresNick)
-                            .addComponent(ensambladorLabel2)
-                            .addComponent(EnsambladoresDisney))))
-                .addGap(58, 58, 58)
-                .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeDia)
-                    .addComponent(addDia)
-                    .addComponent(txt)
-                    .addComponent(removeAmmount)
-                    .addComponent(addAmmount)
-                    .addGroup(ConfigurationDashboardLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(ConfigurationDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(dayDuration)
-                            .addComponent(dia)
-                            .addComponent(deadline)
-                            .addComponent(ammount))))
-                .addGap(60, 60, 60))
-        );
+        ConfigurationDashboard.add(txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(375, 412, -1, -1));
 
         jTabbedPane1.addTab("ConfigurationDashboard", ConfigurationDashboard);
 
+        NickelodeonDash.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel2.setText("NICKELODEON");
+        NickelodeonDash.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, 40));
 
         guionistasLabel.setText("Guionistas:");
+        NickelodeonDash.add(guionistasLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 66, -1, -1));
 
         escenariosLabel.setText("Diseñador de escenarios:");
+        NickelodeonDash.add(escenariosLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 116, -1, -1));
 
         animadorLabel.setText("Animador de personajes:");
+        NickelodeonDash.add(animadorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 173, -1, -1));
 
         doblajeLabel.setText("Actores de doblaje:");
+        NickelodeonDash.add(doblajeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 253, -1, -1));
 
         plotTwistLabel.setText("Guionista de PlotTwist:");
+        NickelodeonDash.add(plotTwistLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 310, -1, -1));
 
         ensambladorLabel.setText("Ensambladores:");
+        NickelodeonDash.add(ensambladorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 363, -1, -1));
 
         qttyGuionistasNick.setText("0");
+        NickelodeonDash.add(qttyGuionistasNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 66, -1, -1));
 
         qttyEscenariosNick.setText("0");
+        NickelodeonDash.add(qttyEscenariosNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 116, -1, -1));
 
         qttyAnimadoresNick.setText("0");
+        NickelodeonDash.add(qttyAnimadoresNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(217, 173, -1, -1));
 
         qttyDobladoresNick.setText("0");
+        NickelodeonDash.add(qttyDobladoresNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(219, 253, -1, -1));
 
         qttyGuionistasPlotTwistsNick.setText("0");
+        NickelodeonDash.add(qttyGuionistasPlotTwistsNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(217, 310, -1, -1));
 
         qttyEnsambladoresNick.setText("0");
+        NickelodeonDash.add(qttyEnsambladoresNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 363, -1, -1));
 
         removeGuionista.setText("-");
         removeGuionista.addActionListener(new java.awt.event.ActionListener() {
@@ -853,6 +700,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeGuionistaActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(removeGuionista, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 63, -1, -1));
 
         addGuionista.setText("+");
         addGuionista.addActionListener(new java.awt.event.ActionListener() {
@@ -860,6 +708,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addGuionistaActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(addGuionista, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 63, -1, -1));
 
         removeEscenarios.setText("-");
         removeEscenarios.addActionListener(new java.awt.event.ActionListener() {
@@ -867,6 +716,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeEscenariosActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(removeEscenarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 113, -1, -1));
 
         addEscenarios.setText("+");
         addEscenarios.addActionListener(new java.awt.event.ActionListener() {
@@ -874,6 +724,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addEscenariosActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(addEscenarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 113, -1, -1));
 
         removeAnimador.setText("-");
         removeAnimador.addActionListener(new java.awt.event.ActionListener() {
@@ -881,6 +732,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeAnimadorActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(removeAnimador, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 170, -1, -1));
 
         addAnimador.setText("+");
         addAnimador.addActionListener(new java.awt.event.ActionListener() {
@@ -888,6 +740,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addAnimadorActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(addAnimador, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 170, -1, -1));
 
         removeDoblaje.setText("-");
         removeDoblaje.addActionListener(new java.awt.event.ActionListener() {
@@ -895,6 +748,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeDoblajeActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(removeDoblaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 250, -1, -1));
 
         addDoblaje.setText("+");
         addDoblaje.addActionListener(new java.awt.event.ActionListener() {
@@ -902,6 +756,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addDoblajeActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(addDoblaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 250, -1, -1));
 
         removePlotTwist.setText("-");
         removePlotTwist.addActionListener(new java.awt.event.ActionListener() {
@@ -909,6 +764,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removePlotTwistActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(removePlotTwist, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 307, -1, -1));
 
         addPlotTwist.setText("+");
         addPlotTwist.addActionListener(new java.awt.event.ActionListener() {
@@ -916,6 +772,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addPlotTwistActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(addPlotTwist, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 307, -1, -1));
 
         removeEnsamblador.setText("-");
         removeEnsamblador.addActionListener(new java.awt.event.ActionListener() {
@@ -923,6 +780,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeEnsambladorActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(removeEnsamblador, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 360, -1, -1));
 
         addEnsamblador.setText("+");
         addEnsamblador.addActionListener(new java.awt.event.ActionListener() {
@@ -930,499 +788,287 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addEnsambladorActionPerformed(evt);
             }
         });
+        NickelodeonDash.add(addEnsamblador, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 360, -1, -1));
 
         jLabel3.setText("Projects Managers:");
+        NickelodeonDash.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 495, -1, -1));
 
         jLabel4.setText("Directores Ejecutivos:");
+        NickelodeonDash.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 529, -1, -1));
 
         qttyProjectsManagersNick.setText("1");
+        NickelodeonDash.add(qttyProjectsManagersNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 495, -1, -1));
 
         qttyDirectoresNick.setText("1");
+        NickelodeonDash.add(qttyDirectoresNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(217, 529, -1, -1));
 
         GuionesSavedLabel.setText("Guiones en el Drive:");
+        NickelodeonDash.add(GuionesSavedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 66, -1, -1));
 
         qttyGuionesSavedNick.setText("0");
+        NickelodeonDash.add(qttyGuionesSavedNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 66, -1, -1));
 
         GuionesMaxLabel.setText("Capacidad Máx:");
+        NickelodeonDash.add(GuionesMaxLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(442, 66, -1, -1));
 
         qttyGuionesMaxNick.setText("25");
+        NickelodeonDash.add(qttyGuionesMaxNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(539, 66, -1, -1));
 
         EscenariosSavedLabel.setText("Escenarios en el Drive:");
+        NickelodeonDash.add(EscenariosSavedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 116, -1, -1));
 
         qttyEscenariosSavedNick.setText("0");
+        NickelodeonDash.add(qttyEscenariosSavedNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 116, -1, -1));
 
         EscenariosMaxLabel.setText("Capacidad Máx:");
+        NickelodeonDash.add(EscenariosMaxLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(443, 116, -1, -1));
 
         qttyEscenariosMaxNick.setText("20");
+        NickelodeonDash.add(qttyEscenariosMaxNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 116, -1, -1));
 
         AnimacionesSavedLabel.setText("Animaciones en el Drive:");
+        NickelodeonDash.add(AnimacionesSavedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 173, -1, -1));
 
         qttyAnimacionesSavedNick.setText("0");
+        NickelodeonDash.add(qttyAnimacionesSavedNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 173, -1, -1));
 
         AnimacionesMaxLabel2.setText("Capacidad Máx:");
+        NickelodeonDash.add(AnimacionesMaxLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 173, -1, -1));
 
         qttyAnimacionesMaxNick.setText("55");
+        NickelodeonDash.add(qttyAnimacionesMaxNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(552, 173, -1, -1));
 
         doblajesSavedLabel3.setText("Doblajes en el Drive:");
+        NickelodeonDash.add(doblajesSavedLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(291, 253, -1, -1));
 
         qttyDoblajesSavedNick.setText("0");
+        NickelodeonDash.add(qttyDoblajesSavedNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(403, 253, -1, -1));
 
         doblajesMaxLabel3.setText("Capacidad Máx:");
+        NickelodeonDash.add(doblajesMaxLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 253, -1, -1));
 
         qttyDoblajesMaxNick.setText("35");
+        NickelodeonDash.add(qttyDoblajesMaxNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 253, -1, -1));
 
         plotTwistsSavedLabel4.setText("PlotTwists en el Drive:");
+        NickelodeonDash.add(plotTwistsSavedLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 310, -1, -1));
 
         qttyPlotTwistsSavedNick.setText("0");
+        NickelodeonDash.add(qttyPlotTwistsSavedNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 310, -1, -1));
 
         plotTwistsMaxLabel4.setText("Capacidad Máx:");
+        NickelodeonDash.add(plotTwistsMaxLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 310, -1, -1));
 
         qttyPlotTwistsMaxNick.setText("10");
+        NickelodeonDash.add(qttyPlotTwistsMaxNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(536, 310, -1, -1));
 
         capsPlotTwistReadyLabel.setText("Capitulos PlotTwists Listos:");
+        NickelodeonDash.add(capsPlotTwistReadyLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 455, -1, -1));
 
         capsReadyLabel.setText("Capitulos Standar Listos:");
+        NickelodeonDash.add(capsReadyLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 421, -1, -1));
 
         qttyStandardCapsReadyNick.setText("0");
+        NickelodeonDash.add(qttyStandardCapsReadyNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 421, -1, -1));
 
         qttyPlotTwistsCapsReadyNick.setText("0");
+        NickelodeonDash.add(qttyPlotTwistsCapsReadyNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 455, -1, -1));
 
         pmStatusLabel.setText("Project Manager Status:");
+        NickelodeonDash.add(pmStatusLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 495, -1, -1));
 
         directorStatusLabel.setText("Director Status:");
+        NickelodeonDash.add(directorStatusLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 529, -1, -1));
 
         pmStatus.setText("...");
+        NickelodeonDash.add(pmStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 495, -1, -1));
 
         directorStatus.setText("...");
+        NickelodeonDash.add(directorStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(436, 529, -1, -1));
 
         gananciaLabelText.setText("Ganancias Totales:");
+        NickelodeonDash.add(gananciaLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 51, -1, -1));
 
         costosLabelText.setText("Costos Totales:");
+        NickelodeonDash.add(costosLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 76, -1, -1));
 
         costosLabelText1.setText("Utilidad Total:");
+        NickelodeonDash.add(costosLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 96, -1, -1));
 
         gananciasLabel.setText("0");
+        NickelodeonDash.add(gananciasLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 51, -1, -1));
 
         costosLabel.setText("0");
+        NickelodeonDash.add(costosLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(725, 76, -1, -1));
 
         utilidadesLabel.setText("0");
+        NickelodeonDash.add(utilidadesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(725, 96, -1, -1));
 
         deadlineLabelText.setText("Deadline:");
+        NickelodeonDash.add(deadlineLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 148, -1, -1));
 
         deadlineLabel.setText("0");
+        NickelodeonDash.add(deadlineLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(704, 148, -1, -1));
 
         faultsLabelText.setText("Faltas del Project Manager:");
+        NickelodeonDash.add(faultsLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(536, 495, -1, -1));
 
         faultsLabel.setText("0");
+        NickelodeonDash.add(faultsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 495, -1, -1));
 
         discountedLabelText.setText("Dinero Descontado al Project Manager:");
+        NickelodeonDash.add(discountedLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(536, 523, -1, -1));
 
         discountedLabel.setText("0");
+        NickelodeonDash.add(discountedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(754, 523, -1, -1));
 
         jLabel1.setText("Dias totales transcurridos:");
+        NickelodeonDash.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 189, -1, -1));
 
         daysPassedLabelN.setText("0");
-
-        javax.swing.GroupLayout NickelodeonDashLayout = new javax.swing.GroupLayout(NickelodeonDash);
-        NickelodeonDash.setLayout(NickelodeonDashLayout);
-        NickelodeonDashLayout.setHorizontalGroup(
-            NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(454, 454, 454)
-                        .addComponent(jLabel2))
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(doblajeLabel)
-                        .addGap(29, 29, 29)
-                        .addComponent(removeDoblaje)
-                        .addGap(12, 12, 12)
-                        .addComponent(qttyDobladoresNick)
-                        .addGap(12, 12, 12)
-                        .addComponent(addDoblaje)
-                        .addGap(31, 31, 31)
-                        .addComponent(doblajesSavedLabel3)
-                        .addGap(6, 6, 6)
-                        .addComponent(qttyDoblajesSavedNick)
-                        .addGap(30, 30, 30)
-                        .addComponent(doblajesMaxLabel3)
-                        .addGap(6, 6, 6)
-                        .addComponent(qttyDoblajesMaxNick))
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(ensambladorLabel)
-                        .addGap(40, 40, 40)
-                        .addComponent(removeEnsamblador)
-                        .addGap(12, 12, 12)
-                        .addComponent(qttyEnsambladoresNick)
-                        .addGap(12, 12, 12)
-                        .addComponent(addEnsamblador))
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(plotTwistLabel)
-                                .addGap(18, 18, 18)
-                                .addComponent(removePlotTwist)
-                                .addGap(12, 12, 12)
-                                .addComponent(qttyGuionistasPlotTwistsNick)
-                                .addGap(12, 12, 12)
-                                .addComponent(addPlotTwist)
-                                .addGap(31, 31, 31)
-                                .addComponent(plotTwistsSavedLabel4)
-                                .addGap(6, 6, 6)
-                                .addComponent(qttyPlotTwistsSavedNick)
-                                .addGap(30, 30, 30)
-                                .addComponent(plotTwistsMaxLabel4))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(305, 305, 305)
-                                .addComponent(capsReadyLabel)
-                                .addGap(12, 12, 12)
-                                .addComponent(qttyStandardCapsReadyNick))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(60, 60, 60)
-                                .addComponent(jLabel3)
-                                .addGap(60, 60, 60)
-                                .addComponent(qttyProjectsManagersNick)
-                                .addGap(66, 66, 66)
-                                .addComponent(pmStatusLabel)
-                                .addGap(18, 18, 18)
-                                .addComponent(pmStatus))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(45, 45, 45)
-                                .addComponent(jLabel4)
-                                .addGap(60, 60, 60)
-                                .addComponent(qttyDirectoresNick)
-                                .addGap(92, 92, 92)
-                                .addComponent(directorStatusLabel)
-                                .addGap(41, 41, 41)
-                                .addComponent(directorStatus))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(305, 305, 305)
-                                .addComponent(capsPlotTwistReadyLabel)
-                                .addGap(12, 12, 12)
-                                .addComponent(qttyPlotTwistsCapsReadyNick)))
-                        .addGap(6, 6, 6)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addComponent(faultsLabelText)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(faultsLabel))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addComponent(discountedLabelText)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(discountedLabel))
-                            .addComponent(qttyPlotTwistsMaxNick)))
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(guionistasLabel)
-                                .addGap(55, 55, 55)
-                                .addComponent(removeGuionista)
-                                .addGap(12, 12, 12)
-                                .addComponent(qttyGuionistasNick)
-                                .addGap(12, 12, 12)
-                                .addComponent(addGuionista)
-                                .addGap(31, 31, 31)
-                                .addComponent(GuionesSavedLabel)
-                                .addGap(6, 6, 6)
-                                .addComponent(qttyGuionesSavedNick)
-                                .addGap(30, 30, 30)
-                                .addComponent(GuionesMaxLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(qttyGuionesMaxNick))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addComponent(escenariosLabel)
-                                .addGap(18, 18, 18)
-                                .addComponent(removeEscenarios)
-                                .addGap(12, 12, 12)
-                                .addComponent(qttyEscenariosNick)
-                                .addGap(12, 12, 12)
-                                .addComponent(addEscenarios)
-                                .addGap(31, 31, 31)
-                                .addComponent(EscenariosSavedLabel)
-                                .addGap(6, 6, 6)
-                                .addComponent(qttyEscenariosSavedNick)
-                                .addGap(30, 30, 30)
-                                .addComponent(EscenariosMaxLabel)
-                                .addGap(6, 6, 6)
-                                .addComponent(qttyEscenariosMaxNick))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(33, 33, 33)
-                                .addComponent(animadorLabel)
-                                .addGap(18, 18, 18)
-                                .addComponent(removeAnimador)
-                                .addGap(12, 12, 12)
-                                .addComponent(qttyAnimadoresNick)
-                                .addGap(12, 12, 12)
-                                .addComponent(addAnimador)
-                                .addGap(31, 31, 31)
-                                .addComponent(AnimacionesSavedLabel)
-                                .addGap(6, 6, 6)
-                                .addComponent(qttyAnimacionesSavedNick)
-                                .addGap(30, 30, 30)
-                                .addComponent(AnimacionesMaxLabel2)
-                                .addGap(6, 6, 6)
-                                .addComponent(qttyAnimacionesMaxNick)))
-                        .addGap(70, 70, 70)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addComponent(deadlineLabelText)
-                                .addGap(21, 21, 21)
-                                .addComponent(deadlineLabel))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addComponent(gananciaLabelText)
-                                .addGap(18, 18, 18)
-                                .addComponent(gananciasLabel))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addComponent(costosLabelText1)
-                                .addGap(18, 18, 18)
-                                .addComponent(utilidadesLabel))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addComponent(costosLabelText)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(costosLabel))
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(daysPassedLabelN)))))
-                .addGap(130, 130, 130))
-        );
-        NickelodeonDashLayout.setVerticalGroup(
-            NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabel2)
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(removeGuionista)
-                            .addComponent(addGuionista)
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(guionistasLabel)
-                                    .addComponent(qttyGuionistasNick)
-                                    .addComponent(GuionesSavedLabel)
-                                    .addComponent(qttyGuionesSavedNick)
-                                    .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(GuionesMaxLabel)
-                                        .addComponent(qttyGuionesMaxNick)))))
-                        .addGap(27, 27, 27)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(removeEscenarios)
-                            .addComponent(addEscenarios)
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(escenariosLabel)
-                                    .addComponent(qttyEscenariosNick)
-                                    .addComponent(EscenariosSavedLabel)
-                                    .addComponent(qttyEscenariosSavedNick)
-                                    .addComponent(EscenariosMaxLabel)
-                                    .addComponent(qttyEscenariosMaxNick)))))
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(gananciaLabelText)
-                            .addComponent(gananciasLabel))
-                        .addGap(9, 9, 9)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(costosLabelText)
-                            .addComponent(costosLabel))
-                        .addGap(4, 4, 4)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(costosLabelText1)
-                            .addComponent(utilidadesLabel))
-                        .addGap(36, 36, 36)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(deadlineLabelText)
-                            .addComponent(deadlineLabel))))
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(removeAnimador)
-                            .addComponent(addAnimador)
-                            .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(animadorLabel)
-                                    .addComponent(qttyAnimadoresNick)
-                                    .addComponent(AnimacionesSavedLabel)
-                                    .addComponent(qttyAnimacionesSavedNick)
-                                    .addComponent(AnimacionesMaxLabel2)
-                                    .addComponent(qttyAnimacionesMaxNick)))))
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(daysPassedLabelN))))
-                .addGap(45, 45, 45)
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeDoblaje)
-                    .addComponent(addDoblaje)
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(doblajeLabel)
-                            .addComponent(qttyDobladoresNick)
-                            .addComponent(doblajesSavedLabel3)
-                            .addComponent(qttyDoblajesSavedNick)
-                            .addComponent(doblajesMaxLabel3)
-                            .addComponent(qttyDoblajesMaxNick))))
-                .addGap(34, 34, 34)
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removePlotTwist)
-                    .addComponent(addPlotTwist)
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(plotTwistLabel)
-                            .addComponent(qttyGuionistasPlotTwistsNick)
-                            .addComponent(plotTwistsSavedLabel4)
-                            .addComponent(qttyPlotTwistsSavedNick)
-                            .addComponent(plotTwistsMaxLabel4)
-                            .addComponent(qttyPlotTwistsMaxNick))))
-                .addGap(30, 30, 30)
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeEnsamblador)
-                    .addComponent(addEnsamblador)
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ensambladorLabel)
-                            .addComponent(qttyEnsambladoresNick))))
-                .addGap(38, 38, 38)
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(capsReadyLabel)
-                    .addComponent(qttyStandardCapsReadyNick))
-                .addGap(18, 18, 18)
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(capsPlotTwistReadyLabel)
-                    .addComponent(qttyPlotTwistsCapsReadyNick))
-                .addGap(24, 24, 24)
-                .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(qttyProjectsManagersNick)
-                            .addComponent(pmStatusLabel)
-                            .addComponent(pmStatus))
-                        .addGap(18, 18, 18)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(qttyDirectoresNick)
-                            .addComponent(directorStatusLabel)
-                            .addComponent(directorStatus)))
-                    .addGroup(NickelodeonDashLayout.createSequentialGroup()
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(faultsLabel)
-                            .addComponent(faultsLabelText))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(NickelodeonDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(discountedLabelText)
-                            .addComponent(discountedLabel))))
-                .addGap(69, 69, 69))
-        );
+        NickelodeonDash.add(daysPassedLabelN, new org.netbeans.lib.awtextra.AbsoluteConstraints(781, 189, -1, -1));
 
         jTabbedPane1.addTab("Nickelodeon", NickelodeonDash);
 
+        DisneyDash.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel5.setText("Directores Ejecutivos:");
+        DisneyDash.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 502, -1, -1));
 
         qttyProjectsManagersNick1.setText("1");
+        DisneyDash.add(qttyProjectsManagersNick1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 468, -1, -1));
 
         qttyPlotTwistsMaxNick1.setText("10");
+        DisneyDash.add(qttyPlotTwistsMaxNick1, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 283, -1, -1));
 
         capsPlotTwistReadyLabel1.setText("Capitulos PlotTwists Listos:");
+        DisneyDash.add(capsPlotTwistReadyLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 428, -1, -1));
 
         capsReadyLabel1.setText("Capitulos Standar Listos:");
+        DisneyDash.add(capsReadyLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 394, -1, -1));
 
         qttyStandardCapsReadyDisney.setText("0");
+        DisneyDash.add(qttyStandardCapsReadyDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 394, -1, -1));
 
         qttyPlotTwistsCapsReadyDisney.setText("0");
+        DisneyDash.add(qttyPlotTwistsCapsReadyDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 428, -1, -1));
 
         pmStatusLabelD.setText("Project Manager Status:");
+        DisneyDash.add(pmStatusLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 468, -1, -1));
 
         directorStatusLabelD.setText("Director Status:");
+        DisneyDash.add(directorStatusLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 502, -1, -1));
 
         qttyDirectoresNick1.setText("1");
+        DisneyDash.add(qttyDirectoresNick1, new org.netbeans.lib.awtextra.AbsoluteConstraints(217, 502, -1, -1));
 
         pmStatusDisney.setText("...");
+        DisneyDash.add(pmStatusDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 468, -1, -1));
 
         GuionesSavedLabelD.setText("Guiones en el Drive:");
+        DisneyDash.add(GuionesSavedLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 66, -1, -1));
 
         directorStatusDisney.setText("...");
+        DisneyDash.add(directorStatusDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(436, 502, -1, -1));
 
         qttyGuionesSavedDisney.setText("0");
+        DisneyDash.add(qttyGuionesSavedDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(412, 66, -1, -1));
 
         gananciaLabelText1.setText("Ganancias Totales:");
+        DisneyDash.add(gananciaLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(621, 51, -1, -1));
 
         GuionesMaxLabelD.setText("Capacidad Máx:");
+        DisneyDash.add(GuionesMaxLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 64, -1, -1));
 
         qttyGuionesMaxNick1.setText("25");
+        DisneyDash.add(qttyGuionesMaxNick1, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 64, -1, -1));
 
         EscenariosSavedLabelD.setText("Escenarios en el Drive:");
+        DisneyDash.add(EscenariosSavedLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 116, -1, -1));
 
         qttyEscenariosSavedDisney.setText("0");
+        DisneyDash.add(qttyEscenariosSavedDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 116, -1, -1));
 
         EscenariosMaxLabelD.setText("Capacidad Máx:");
+        DisneyDash.add(EscenariosMaxLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 113, -1, -1));
 
         qttyEscenariosMaxNick1.setText("20");
+        DisneyDash.add(qttyEscenariosMaxNick1, new org.netbeans.lib.awtextra.AbsoluteConstraints(549, 113, -1, -1));
 
         AnimacionesSavedLabelD.setText("Animaciones en el Drive:");
+        DisneyDash.add(AnimacionesSavedLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 167, -1, -1));
 
         costosLabelText2.setText("Costos Totales:");
+        DisneyDash.add(costosLabelText2, new org.netbeans.lib.awtextra.AbsoluteConstraints(621, 76, -1, -1));
 
         costosLabelText3.setText("Utilidad Total:");
+        DisneyDash.add(costosLabelText3, new org.netbeans.lib.awtextra.AbsoluteConstraints(621, 96, -1, -1));
 
         gananciasLabelDisney.setText("0");
+        DisneyDash.add(gananciasLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 51, -1, -1));
 
         costosLabelDisney.setText("0");
+        DisneyDash.add(costosLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(712, 76, -1, -1));
 
         utilidadesLabelDisney.setText("0");
+        DisneyDash.add(utilidadesLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(712, 96, -1, -1));
 
         deadlineLabelText1.setText("Deadline:");
+        DisneyDash.add(deadlineLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(621, 148, -1, -1));
 
         deadlineLabelDisney.setText("0");
+        DisneyDash.add(deadlineLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(691, 148, -1, -1));
 
         faultsLabelText1.setText("Faltas del Project Manager:");
+        DisneyDash.add(faultsLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 468, -1, -1));
 
         faultsLabelDisney.setText("0");
+        DisneyDash.add(faultsLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(685, 468, -1, -1));
 
         discountedLabelText1.setText("Dinero Descontado al Project Manager:");
+        DisneyDash.add(discountedLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 496, -1, -1));
 
         jLabel6.setText("DISNEY");
+        DisneyDash.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 17, -1, -1));
 
         guionistasLabelDisney.setText("Guionistas:");
+        DisneyDash.add(guionistasLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 66, -1, -1));
 
         escenariosLabelDisney.setText("Diseñador de escenarios:");
+        DisneyDash.add(escenariosLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 116, -1, -1));
 
         animadorLabelDisney.setText("Animador de personajes:");
+        DisneyDash.add(animadorLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 167, -1, -1));
 
         doblajeLabelDisney.setText("Actores de doblaje:");
+        DisneyDash.add(doblajeLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 226, -1, -1));
 
         plotTwistLabelDisney.setText("Guionista de PlotTwist:");
+        DisneyDash.add(plotTwistLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 283, -1, -1));
 
         ensambladorLabelDisney.setText("Ensambladores:");
+        DisneyDash.add(ensambladorLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 336, -1, -1));
 
         qttyGuionistasDisney.setText("0");
+        DisneyDash.add(qttyGuionistasDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 66, -1, -1));
 
         discountedLabelDisney.setText("0");
+        DisneyDash.add(discountedLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 496, -1, -1));
 
         qttyEscenariosDisney.setText("0");
+        DisneyDash.add(qttyEscenariosDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 116, -1, -1));
 
         qttyAnimadoresDisney.setText("0");
+        DisneyDash.add(qttyAnimadoresDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 167, -1, -1));
 
         qttyDobladoresDisney.setText("0");
+        DisneyDash.add(qttyDobladoresDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(217, 226, -1, -1));
 
         qttyGuionistasPlotTwistsDisney.setText("0");
+        DisneyDash.add(qttyGuionistasPlotTwistsDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(217, 283, -1, -1));
 
         qttyEnsambladoresDisney.setText("0");
+        DisneyDash.add(qttyEnsambladoresDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 336, -1, -1));
 
         removeGuionistaDisney.setText("-");
         removeGuionistaDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1430,6 +1076,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeGuionistaDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(removeGuionistaDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 63, -1, -1));
 
         addGuionistaDisney.setText("+");
         addGuionistaDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1437,6 +1084,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addGuionistaDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(addGuionistaDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 63, -1, -1));
 
         removeEscenariosDisney.setText("-");
         removeEscenariosDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1444,6 +1092,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeEscenariosDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(removeEscenariosDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 113, -1, -1));
 
         addEscenariosDisney.setText("+");
         addEscenariosDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1451,6 +1100,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addEscenariosDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(addEscenariosDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 113, -1, -1));
 
         removeAnimadorDisney.setText("-");
         removeAnimadorDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1458,20 +1108,28 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeAnimadorDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(removeAnimadorDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 164, -1, -1));
 
         qttyAnimacionesSavedDisney.setText("0");
+        DisneyDash.add(qttyAnimacionesSavedDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(424, 167, -1, -1));
 
         AnimacionesMaxLabelD.setText("Capacidad Máx:");
+        DisneyDash.add(AnimacionesMaxLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 167, -1, -1));
 
         qttyAnimacionesMaxNick1.setText("55");
+        DisneyDash.add(qttyAnimacionesMaxNick1, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 167, -1, -1));
 
         doblajesSavedLabelD.setText("Doblajes en el Drive:");
+        DisneyDash.add(doblajesSavedLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 226, -1, -1));
 
         qttyDoblajesSavedDisney.setText("0");
+        DisneyDash.add(qttyDoblajesSavedDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 226, -1, -1));
 
         doblajesMaxLabelD.setText("Capacidad Máx:");
+        DisneyDash.add(doblajesMaxLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 226, -1, -1));
 
         qttyDoblajesMaxNick1.setText("35");
+        DisneyDash.add(qttyDoblajesMaxNick1, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 226, -1, -1));
 
         addAnimadorDisney.setText("+");
         addAnimadorDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1479,8 +1137,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addAnimadorDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(addAnimadorDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 164, -1, -1));
 
         plotTwistsSavedLabelD.setText("PlotTwists en el Drive:");
+        DisneyDash.add(plotTwistsSavedLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 283, -1, -1));
 
         removeDoblajeDisney.setText("-");
         removeDoblajeDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1488,8 +1148,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeDoblajeDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(removeDoblajeDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 223, -1, -1));
 
         qttyPlotTwistsSavedDisney.setText("0");
+        DisneyDash.add(qttyPlotTwistsSavedDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 283, -1, -1));
 
         addDoblajeDisney.setText("+");
         addDoblajeDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1497,8 +1159,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addDoblajeDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(addDoblajeDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 223, -1, -1));
 
         plotTwistsMaxLabelD.setText("Capacidad Máx:");
+        DisneyDash.add(plotTwistsMaxLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 283, -1, -1));
 
         removePlotTwistDisney.setText("-");
         removePlotTwistDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1506,6 +1170,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removePlotTwistDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(removePlotTwistDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 280, -1, -1));
 
         addPlotTwistDisney.setText("+");
         addPlotTwistDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1513,6 +1178,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addPlotTwistDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(addPlotTwistDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 280, -1, -1));
 
         removeEnsambladorDisney.setText("-");
         removeEnsambladorDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1520,6 +1186,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 removeEnsambladorDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(removeEnsambladorDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 333, -1, -1));
 
         addEnsambladorDisney.setText("+");
         addEnsambladorDisney.addActionListener(new java.awt.event.ActionListener() {
@@ -1527,334 +1194,20 @@ public class PruebaTabbed extends javax.swing.JFrame {
                 addEnsambladorDisneyActionPerformed(evt);
             }
         });
+        DisneyDash.add(addEnsambladorDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 333, -1, -1));
 
         jLabel7.setText("Projects Managers:");
+        DisneyDash.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 468, -1, -1));
 
         jLabel8.setText("Dias totales transcurridos:");
+        DisneyDash.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(621, 182, -1, -1));
 
         daysPassedLabelD.setText("0");
-
-        javax.swing.GroupLayout DisneyDashLayout = new javax.swing.GroupLayout(DisneyDash);
-        DisneyDash.setLayout(DisneyDashLayout);
-        DisneyDashLayout.setHorizontalGroup(
-            DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DisneyDashLayout.createSequentialGroup()
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(454, 454, 454)
-                        .addComponent(jLabel6))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(ensambladorLabelDisney)
-                        .addGap(40, 40, 40)
-                        .addComponent(removeEnsambladorDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(qttyEnsambladoresDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(addEnsambladorDisney))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(plotTwistLabelDisney)
-                        .addGap(18, 18, 18)
-                        .addComponent(removePlotTwistDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(qttyGuionistasPlotTwistsDisney)
-                        .addGap(12, 12, 12)
-                        .addComponent(addPlotTwistDisney)
-                        .addGap(31, 31, 31)
-                        .addComponent(plotTwistsSavedLabelD)
-                        .addGap(6, 6, 6)
-                        .addComponent(qttyPlotTwistsSavedDisney))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(305, 305, 305)
-                        .addComponent(capsReadyLabel1)
-                        .addGap(12, 12, 12)
-                        .addComponent(qttyStandardCapsReadyDisney))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel7)
-                        .addGap(60, 60, 60)
-                        .addComponent(qttyProjectsManagersNick1)
-                        .addGap(66, 66, 66)
-                        .addComponent(pmStatusLabelD)
-                        .addGap(18, 18, 18)
-                        .addComponent(pmStatusDisney))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(jLabel5)
-                        .addGap(60, 60, 60)
-                        .addComponent(qttyDirectoresNick1)
-                        .addGap(92, 92, 92)
-                        .addComponent(directorStatusLabelD)
-                        .addGap(41, 41, 41)
-                        .addComponent(directorStatusDisney))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(305, 305, 305)
-                        .addComponent(capsPlotTwistReadyLabel1)
-                        .addGap(12, 12, 12)
-                        .addComponent(qttyPlotTwistsCapsReadyDisney))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                                        .addGap(76, 76, 76)
-                                        .addComponent(guionistasLabelDisney)
-                                        .addGap(55, 55, 55)
-                                        .addComponent(removeGuionistaDisney)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(qttyGuionistasDisney)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(addGuionistaDisney)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(GuionesSavedLabelD)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(qttyGuionesSavedDisney))
-                                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                                        .addGap(30, 30, 30)
-                                        .addComponent(escenariosLabelDisney)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(removeEscenariosDisney)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(qttyEscenariosDisney)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(addEscenariosDisney)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(EscenariosSavedLabelD)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(qttyEscenariosSavedDisney)))
-                                .addGap(0, 0, 0)
-                                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                                        .addGap(40, 40, 40)
-                                        .addComponent(EscenariosMaxLabelD)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(qttyEscenariosMaxNick1))
-                                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                                        .addGap(42, 42, 42)
-                                        .addComponent(GuionesMaxLabelD)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(qttyGuionesMaxNick1))))
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                                        .addComponent(animadorLabelDisney)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(removeAnimadorDisney)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(qttyAnimadoresDisney)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(addAnimadorDisney)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(AnimacionesSavedLabelD)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(qttyAnimacionesSavedDisney)
-                                        .addGap(30, 30, 30)
-                                        .addComponent(AnimacionesMaxLabelD)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(qttyAnimacionesMaxNick1))
-                                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(plotTwistsMaxLabelD)
-                                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                                .addComponent(doblajeLabelDisney)
-                                                .addGap(29, 29, 29)
-                                                .addComponent(removeDoblajeDisney)
-                                                .addGap(12, 12, 12)
-                                                .addComponent(qttyDobladoresDisney)
-                                                .addGap(12, 12, 12)
-                                                .addComponent(addDoblajeDisney)
-                                                .addGap(31, 31, 31)
-                                                .addComponent(doblajesSavedLabelD)
-                                                .addGap(6, 6, 6)
-                                                .addComponent(qttyDoblajesSavedDisney)
-                                                .addGap(53, 53, 53)
-                                                .addComponent(doblajesMaxLabelD)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(qttyDoblajesMaxNick1)
-                                            .addComponent(qttyPlotTwistsMaxNick1))))))
-                        .addGap(58, 58, 58)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addComponent(deadlineLabelText1)
-                                .addGap(21, 21, 21)
-                                .addComponent(deadlineLabelDisney))
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addComponent(costosLabelText3)
-                                .addGap(18, 18, 18)
-                                .addComponent(utilidadesLabelDisney))
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addComponent(costosLabelText2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(costosLabelDisney))
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addComponent(gananciaLabelText1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(gananciasLabelDisney))
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(daysPassedLabelD))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DisneyDashLayout.createSequentialGroup()
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addComponent(faultsLabelText1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(faultsLabelDisney))
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addComponent(discountedLabelText1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(discountedLabelDisney)))
-                        .addGap(19, 19, 19)))
-                .addContainerGap(188, Short.MAX_VALUE))
-        );
-        DisneyDashLayout.setVerticalGroup(
-            DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DisneyDashLayout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabel6)
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(removeGuionistaDisney)
-                            .addComponent(addGuionistaDisney)
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(guionistasLabelDisney)
-                                    .addComponent(qttyGuionistasDisney)
-                                    .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(GuionesSavedLabelD)
-                                        .addComponent(qttyGuionesSavedDisney)))))
-                        .addGap(27, 27, 27)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(removeEscenariosDisney)
-                            .addComponent(addEscenariosDisney)
-                            .addGroup(DisneyDashLayout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(escenariosLabelDisney)
-                                    .addComponent(qttyEscenariosDisney)
-                                    .addComponent(EscenariosSavedLabelD)
-                                    .addComponent(qttyEscenariosSavedDisney)))))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(gananciaLabelText1)
-                            .addComponent(gananciasLabelDisney))
-                        .addGap(9, 9, 9)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(costosLabelText2)
-                            .addComponent(costosLabelDisney))
-                        .addGap(4, 4, 4)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(costosLabelText3)
-                            .addComponent(utilidadesLabelDisney))
-                        .addGap(36, 36, 36)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(deadlineLabelText1)
-                            .addComponent(deadlineLabelDisney)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DisneyDashLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(GuionesMaxLabelD)
-                            .addComponent(qttyGuionesMaxNick1))
-                        .addGap(33, 33, 33)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(EscenariosMaxLabelD)
-                            .addComponent(qttyEscenariosMaxNick1))
-                        .addGap(35, 35, 35)))
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeAnimadorDisney)
-                    .addComponent(addAnimadorDisney)
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(animadorLabelDisney)
-                            .addComponent(qttyAnimadoresDisney)
-                            .addComponent(AnimacionesSavedLabelD)
-                            .addComponent(qttyAnimacionesSavedDisney)
-                            .addComponent(AnimacionesMaxLabelD)
-                            .addComponent(qttyAnimacionesMaxNick1)))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(daysPassedLabelD))))
-                .addGap(25, 25, 25)
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeDoblajeDisney)
-                    .addComponent(addDoblajeDisney)
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(doblajeLabelDisney)
-                            .addComponent(qttyDobladoresDisney)
-                            .addComponent(doblajesSavedLabelD)
-                            .addComponent(qttyDoblajesSavedDisney)
-                            .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(doblajesMaxLabelD)
-                                .addComponent(qttyDoblajesMaxNick1)))))
-                .addGap(34, 34, 34)
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removePlotTwistDisney)
-                    .addComponent(addPlotTwistDisney)
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(plotTwistLabelDisney)
-                            .addComponent(qttyGuionistasPlotTwistsDisney)
-                            .addComponent(plotTwistsSavedLabelD)
-                            .addComponent(qttyPlotTwistsSavedDisney)
-                            .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(plotTwistsMaxLabelD)
-                                .addComponent(qttyPlotTwistsMaxNick1)))))
-                .addGap(30, 30, 30)
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeEnsambladorDisney)
-                    .addComponent(addEnsambladorDisney)
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ensambladorLabelDisney)
-                            .addComponent(qttyEnsambladoresDisney))))
-                .addGap(38, 38, 38)
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(capsReadyLabel1)
-                    .addComponent(qttyStandardCapsReadyDisney))
-                .addGap(18, 18, 18)
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(capsPlotTwistReadyLabel1)
-                    .addComponent(qttyPlotTwistsCapsReadyDisney))
-                .addGap(24, 24, 24)
-                .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(qttyProjectsManagersNick1)
-                            .addComponent(pmStatusLabelD)
-                            .addComponent(pmStatusDisney))
-                        .addGap(18, 18, 18)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(qttyDirectoresNick1)
-                            .addComponent(directorStatusLabelD)
-                            .addComponent(directorStatusDisney)))
-                    .addGroup(DisneyDashLayout.createSequentialGroup()
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(faultsLabelDisney)
-                            .addComponent(faultsLabelText1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(DisneyDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(discountedLabelText1)
-                            .addComponent(discountedLabelDisney))))
-                .addGap(69, 69, 69))
-        );
+        DisneyDash.add(daysPassedLabelD, new org.netbeans.lib.awtextra.AbsoluteConstraints(768, 182, -1, -1));
 
         jTabbedPane1.addTab("DisneyChannel", DisneyDash);
+
+        NickVSDisney.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Grafico.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -1869,37 +1222,13 @@ public class PruebaTabbed extends javax.swing.JFrame {
             .addGap(0, 308, Short.MAX_VALUE)
         );
 
+        NickVSDisney.add(Grafico, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 88, -1, -1));
+
         jLabel9.setText("Dias totales transcurridos:");
+        NickVSDisney.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(417, 25, -1, -1));
 
         daysPassedLabelGrafico.setText("0");
-
-        javax.swing.GroupLayout NickVSDisneyLayout = new javax.swing.GroupLayout(NickVSDisney);
-        NickVSDisney.setLayout(NickVSDisneyLayout);
-        NickVSDisneyLayout.setHorizontalGroup(
-            NickVSDisneyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NickVSDisneyLayout.createSequentialGroup()
-                .addGroup(NickVSDisneyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(NickVSDisneyLayout.createSequentialGroup()
-                        .addGap(417, 417, 417)
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(daysPassedLabelGrafico))
-                    .addGroup(NickVSDisneyLayout.createSequentialGroup()
-                        .addGap(178, 178, 178)
-                        .addComponent(Grafico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(199, 199, 199))
-        );
-        NickVSDisneyLayout.setVerticalGroup(
-            NickVSDisneyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NickVSDisneyLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(NickVSDisneyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(daysPassedLabelGrafico))
-                .addGap(47, 47, 47)
-                .addComponent(Grafico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        NickVSDisney.add(daysPassedLabelGrafico, new org.netbeans.lib.awtextra.AbsoluteConstraints(564, 25, -1, -1));
 
         jTabbedPane1.addTab("Nick_VS_Disney", NickVSDisney);
 
