@@ -254,6 +254,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
         discountedLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         daysPassedLabelN = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         DisneyDash = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         qttyProjectsManagersNick1 = new javax.swing.JLabel();
@@ -803,7 +804,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
         NickelodeonDash.add(qttyDirectoresNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(217, 529, -1, -1));
 
         GuionesSavedLabel.setText("Guiones en el Drive:");
-        NickelodeonDash.add(GuionesSavedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 66, -1, -1));
+        NickelodeonDash.add(GuionesSavedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, -1));
 
         qttyGuionesSavedNick.setText("0");
         NickelodeonDash.add(qttyGuionesSavedNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 66, -1, -1));
@@ -928,6 +929,10 @@ public class PruebaTabbed extends javax.swing.JFrame {
         daysPassedLabelN.setText("0");
         NickelodeonDash.add(daysPassedLabelN, new org.netbeans.lib.awtextra.AbsoluteConstraints(781, 189, -1, -1));
 
+        jLabel10.setBackground(new java.awt.Color(204, 255, 255));
+        jLabel10.setIcon(new javax.swing.ImageIcon("/Users/fabriziospiotta/Documents/NetBeans/Imagenes/fc-juventus-logo-A48B34A764-seeklogo.com.png")); // NOI18N
+        NickelodeonDash.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, 180, 290));
+
         jTabbedPane1.addTab("Nickelodeon", NickelodeonDash);
 
         DisneyDash.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1020,13 +1025,13 @@ public class PruebaTabbed extends javax.swing.JFrame {
         DisneyDash.add(deadlineLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(691, 148, -1, -1));
 
         faultsLabelText1.setText("Faltas del Project Manager:");
-        DisneyDash.add(faultsLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 468, -1, -1));
+        DisneyDash.add(faultsLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 470, -1, -1));
 
         faultsLabelDisney.setText("0");
-        DisneyDash.add(faultsLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(685, 468, -1, -1));
+        DisneyDash.add(faultsLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 470, -1, -1));
 
         discountedLabelText1.setText("Dinero Descontado al Project Manager:");
-        DisneyDash.add(discountedLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 496, -1, -1));
+        DisneyDash.add(discountedLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 490, -1, -1));
 
         jLabel6.setText("DISNEY");
         DisneyDash.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 17, -1, -1));
@@ -1053,7 +1058,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
         DisneyDash.add(qttyGuionistasDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 66, -1, -1));
 
         discountedLabelDisney.setText("0");
-        DisneyDash.add(discountedLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 496, -1, -1));
+        DisneyDash.add(discountedLabelDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 490, -1, -1));
 
         qttyEscenariosDisney.setText("0");
         DisneyDash.add(qttyEscenariosDisney, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 116, -1, -1));
@@ -1238,12 +1243,11 @@ public class PruebaTabbed extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1029, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jTabbedPane1))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
         );
 
         pack();
@@ -1796,6 +1800,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
     private javax.swing.JLabel guionistasLabel2;
     private javax.swing.JLabel guionistasLabelDisney;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
