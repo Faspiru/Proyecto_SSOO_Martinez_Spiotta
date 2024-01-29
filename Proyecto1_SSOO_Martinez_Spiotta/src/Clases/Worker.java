@@ -8,6 +8,7 @@ import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -18,40 +19,37 @@ public class Worker extends Thread{
     private int type;
     private float salaryAcumulate;
     private int dayDuration;
-    private int cautity;
+    private int quantityWorkers;
     private int salary;
     private Drive drive;
-    private int dayCounterForSalary;
-    private int daysTofinishWork;
+    private int daysCounter;
+    private int daysToFinishWork;
     private Semaphore mutex;
 
-    public Worker(int type, int dayDuration, int cautity, Drive drive, Semaphore mutex) {
+    public Worker(int type, int dayDuration, int quantity, Drive drive, Semaphore mutex, int [] daysToFinish) {
         this.type = type;
-        this.cautity = cautity;
+        this.quantityWorkers = quantity;
+        this.daysToFinishWork = daysToFinish[type];
         if (this.type == 0) {
             this.salary = 20;
-            this.daysTofinishWork = 2; // Este numero deberia venir de la compania
         }
-        if (this.type == 1) {
+        else if (this.type == 1) {
             this.salary = 26;
-            this.daysTofinishWork = 2; // Este numero deberia venir de la compania
         }
-        if (this.type == 2) {
+        else if (this.type == 2) {
             this.salary = 40;
-            this.daysTofinishWork = 1; // Este numero deberia venir de la compania
         }
-        if (this.type == 3) {
+        else if (this.type == 3) {
             this.salary = 16;
-            this.daysTofinishWork = 1; // Este numero deberia venir de la compania
         }
-        if (this.type == 4) {
-            this.salary = 16;
-            this.daysTofinishWork = 3; // Este numero deberia venir de la compania
-        }
+        else if (this.type == 4) {
+            this.salary = 34;
+        } 
+
         this.salaryAcumulate = 0;
         this.dayDuration = dayDuration;
         this.drive = drive;
-        this.dayCounterForSalary = 0;
+        this.daysCounter = 0;
         this.mutex = mutex;
     }
     
@@ -61,7 +59,6 @@ public class Worker extends Thread{
             try {
                 paySalary();
                 work();
-                System.out.println("Trabajador: "+ this.getType() + " gana: "+this.getSalaryAcumulate()+"$");
                 sleep(this.getDayDuration());
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
@@ -70,27 +67,34 @@ public class Worker extends Thread{
     }
     
     public void paySalary(){
-        this.setSalaryAcumulate(this.getSalaryAcumulate() + ((this.getSalary() * 24)) * this.getCautity());
+        //System.out.println("WORKER " + type + " Acumulado " + salaryAcumulate);
+        this.setSalaryAcumulate(this.getSalaryAcumulate() + ((this.getSalary() * 24)) * this.getQuantityWorkers());
     }
     
     public void work(){
-        this.setDayCounterForSalary(this.getDayCounterForSalary() + 1);
-        if (this.getDayCounterForSalary() == this.getDaysTofinishWork()){ // ese valor de 2 depende de la compania
+        this.setDaysCounter(this.getDaysCounter() + 1);
+        if (this.getDaysCounter() == this.getDaysToFinishWork()){ // ese valor de 2 depende de la compania
             try {
                 this.getMutex().acquire(); //wait
-                this.getDrive().addPart(this.getType(), this.getCautity()); //critica
+                this.getDrive().addPart(this.getType(), this.getQuantityWorkers()); //critica
                 this.getMutex().release(); // signal
-                this.setDayCounterForSalary(0);
+                this.setDaysCounter(0);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
             }
         }   
     }
-    
+     
     public void deleteWorker() {
-        if (this.getCautity() != 1) {
-            this.setCautity(this.cautity - 1);
+        if (this.getQuantityWorkers() != 1) {
+            this.setQuantityWorkers(this.quantityWorkers - 1);
+        } else {
+            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
         }
+    }
+    
+    public void addWorker(){
+        this.setQuantityWorkers(quantityWorkers + 1);
     }
 
     /**
@@ -164,31 +168,31 @@ public class Worker extends Thread{
     }
 
     /**
-     * @return the dayCounterForSalary
+     * @return the daysCounter
      */
-    public int getDayCounterForSalary() {
-        return dayCounterForSalary;
+    public int getDaysCounter() {
+        return daysCounter;
     }
 
     /**
-     * @param dayCounterForSalary the dayCounterForSalary to set
+     * @param daysCounter the daysCounter to set
      */
-    public void setDayCounterForSalary(int dayCounterForSalary) {
-        this.dayCounterForSalary = dayCounterForSalary;
+    public void setDaysCounter(int daysCounter) {
+        this.daysCounter = daysCounter;
     }
 
     /**
-     * @return the daysTofinishWork
+     * @return the daysToFinishWork
      */
-    public int getDaysTofinishWork() {
-        return daysTofinishWork;
+    public int getDaysToFinishWork() {
+        return daysToFinishWork;
     }
 
     /**
-     * @param daysTofinishWork the daysTofinishWork to set
+     * @param daysToFinishWork the daysToFinishWork to set
      */
-    public void setDaysTofinishWork(int daysTofinishWork) {
-        this.daysTofinishWork = daysTofinishWork;
+    public void setDaysToFinishWork(int daysToFinishWork) {
+        this.daysToFinishWork = daysToFinishWork;
     }
 
     /**
@@ -206,17 +210,17 @@ public class Worker extends Thread{
     }
 
     /**
-     * @return the cautity
+     * @return the quantityWorkers
      */
-    public int getCautity() {
-        return cautity;
+    public int getQuantityWorkers() {
+        return quantityWorkers;
     }
 
     /**
-     * @param cautity the cautity to set
+     * @param quantityWorkers the quantityWorkers to set
      */
-    public void setCautity(int cautity) {
-        this.cautity = cautity;
+    public void setQuantityWorkers(int quantityWorkers) {
+        this.quantityWorkers = quantityWorkers;
     }
     
     
