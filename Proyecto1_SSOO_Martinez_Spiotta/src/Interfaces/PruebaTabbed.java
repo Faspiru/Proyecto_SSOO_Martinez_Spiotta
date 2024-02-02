@@ -357,12 +357,14 @@ public class PruebaTabbed extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
         dinseyFondo = new javax.swing.JLabel();
         NickVSDisney = new javax.swing.JPanel();
         Grafico = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         daysPassedLabelGrafico = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1137,40 +1139,40 @@ public class PruebaTabbed extends javax.swing.JFrame {
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         discountedLabelText.setText("Dinero Descontado al PM:");
-        jPanel3.add(discountedLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 265, -1, -1));
+        jPanel3.add(discountedLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
 
         jLabel1.setText("Dias totales transcurridos:");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 224, -1, -1));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
         deadlineLabelText.setText("Deadline:");
-        jPanel3.add(deadlineLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 183, -1, -1));
+        jPanel3.add(deadlineLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
         costosLabelText1.setText("Utilidad Total:");
-        jPanel3.add(costosLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 132, -1, -1));
+        jPanel3.add(costosLabelText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         costosLabelText.setText("Costos Totales:");
-        jPanel3.add(costosLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 101, -1, -1));
+        jPanel3.add(costosLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
 
         gananciaLabelText.setText("Ganancias Totales:");
-        jPanel3.add(gananciaLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 70, -1, -1));
+        jPanel3.add(gananciaLabelText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
         gananciasLabel.setText("0");
-        jPanel3.add(gananciasLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 70, -1, -1));
+        jPanel3.add(gananciasLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
 
         costosLabel.setText("0");
-        jPanel3.add(costosLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 101, -1, -1));
+        jPanel3.add(costosLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, -1));
 
         utilidadesLabel.setText("0");
-        jPanel3.add(utilidadesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 132, -1, -1));
+        jPanel3.add(utilidadesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, -1, -1));
 
         deadlineLabel.setText("0");
-        jPanel3.add(deadlineLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 183, -1, -1));
+        jPanel3.add(deadlineLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, -1));
 
         daysPassedLabelN.setText("0");
-        jPanel3.add(daysPassedLabelN, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 224, -1, -1));
+        jPanel3.add(daysPassedLabelN, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, -1, -1));
 
         discountedLabel.setText("0");
-        jPanel3.add(discountedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 265, -1, -1));
+        jPanel3.add(discountedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, -1));
 
         jPanel6.setBackground(new java.awt.Color(149, 47, 250));
 
@@ -1277,15 +1279,15 @@ public class PruebaTabbed extends javax.swing.JFrame {
             .addGap(0, 10, Short.MAX_VALUE)
         );
 
-        jPanel17.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 42, 198, -1));
+        jPanel17.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 198, -1));
 
         jLabel23.setBackground(new java.awt.Color(185, 219, 253));
         jLabel23.setFont(new java.awt.Font("Segoe UI Black", 3, 24)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(185, 219, 253));
         jLabel23.setText("Estadisticas");
-        jPanel17.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 6, 155, -1));
+        jPanel17.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 155, -1));
 
-        DisneyDash.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 190, 200, 300));
+        DisneyDash.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 190, 220, 300));
 
         jPanel15.setBackground(new java.awt.Color(56, 55, 125));
         jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1430,8 +1432,6 @@ public class PruebaTabbed extends javax.swing.JFrame {
         );
 
         jPanel15.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 320, 10));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("/Users/fabriziospiotta/Documents/Sistemas Operativos/Proyecto1_SSOO_Martinez_Spiotta/Proyecto1_SSOO_Martinez_Spiotta/src/images/PhineasAndFerb.png")); // NOI18N
         jPanel15.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, -1, -1));
 
         DisneyDash.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 340, 420));
@@ -1795,11 +1795,12 @@ public class PruebaTabbed extends javax.swing.JFrame {
         );
 
         DisneyDash.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 350, 540));
-
-        jLabel21.setIcon(new javax.swing.ImageIcon("/Users/fabriziospiotta/Documents/Sistemas Operativos/Proyecto1_SSOO_Martinez_Spiotta/Proyecto1_SSOO_Martinez_Spiotta/src/images/DisneyLogo.png")); // NOI18N
         DisneyDash.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, -50, -1, -1));
 
-        dinseyFondo.setIcon(new javax.swing.ImageIcon("/Users/fabriziospiotta/Documents/Sistemas Operativos/Proyecto1_SSOO_Martinez_Spiotta/Proyecto1_SSOO_Martinez_Spiotta/src/images/FondoDisney.jpeg")); // NOI18N
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/DisneyLogo.png"))); // NOI18N
+        DisneyDash.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, -40, -1, -1));
+
+        dinseyFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/FondoDisney.jpeg"))); // NOI18N
         DisneyDash.add(dinseyFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, 600));
 
         jTabbedPane1.addTab("DisneyChannel", DisneyDash);
@@ -1823,17 +1824,18 @@ public class PruebaTabbed extends javax.swing.JFrame {
 
         jLabel9.setBackground(new java.awt.Color(0, 0, 0));
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Dias totales transcurridos:");
         NickVSDisney.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, -1, -1));
 
         daysPassedLabelGrafico.setBackground(new java.awt.Color(0, 0, 0));
-        daysPassedLabelGrafico.setForeground(new java.awt.Color(0, 0, 0));
+        daysPassedLabelGrafico.setForeground(new java.awt.Color(255, 255, 255));
         daysPassedLabelGrafico.setText("0");
         NickVSDisney.add(daysPassedLabelGrafico, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, -1, -1));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon("/Users/fabriziospiotta/Documents/Sistemas Operativos/Proyecto1_SSOO_Martinez_Spiotta/Proyecto1_SSOO_Martinez_Spiotta/src/images/FondoGrafico.jpg")); // NOI18N
         NickVSDisney.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/FondoGrafico.png"))); // NOI18N
+        NickVSDisney.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1080, 600));
 
         jTabbedPane1.addTab("Nick_VS_Disney", NickVSDisney);
 
@@ -1842,8 +1844,8 @@ public class PruebaTabbed extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1006, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2416,6 +2418,8 @@ public class PruebaTabbed extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
