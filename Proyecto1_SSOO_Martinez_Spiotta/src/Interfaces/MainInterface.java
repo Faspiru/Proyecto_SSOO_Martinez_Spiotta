@@ -6,40 +6,17 @@ package Interfaces;
 
 import Clases.Company;
 import Clases.GraphManager;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.PrintWriter;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.Timer;
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartPanel;
-import org.jfree.chart.JFreeChart;
-import org.jfree.chart.axis.Axis;
-import org.jfree.chart.axis.NumberAxis;
-import org.jfree.chart.plot.CategoryPlot;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.chart.plot.XYPlot;
-import org.jfree.chart.renderer.category.BarRenderer;
-import org.jfree.chart.renderer.category.LineAndShapeRenderer;
-import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
-import org.jfree.data.category.CategoryDataset;
-import org.jfree.data.category.DefaultCategoryDataset;
-import org.jfree.data.time.Day;
-import org.jfree.data.time.Second;
-import org.jfree.data.xy.DefaultXYDataset;
-import org.jfree.data.xy.XYDataset;
-import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
+
 
 /**
  *
  * @author fabriziospiotta
  */
-public class PruebaTabbed extends javax.swing.JFrame {
+public class MainInterface extends javax.swing.JFrame {
     
     static Company nickelodeon;
     static Company disney;
@@ -47,7 +24,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
     /**
      * Creates new form PruebaTabbed
      */
-    public PruebaTabbed(Company nickelodeon, Company disney, int[] initialQuantitiesN, int []initialQuantitiesD) {
+    public MainInterface(Company nickelodeon, Company disney, int[] initialQuantitiesN, int []initialQuantitiesD) {
         initComponents();
         
         this.nickelodeon = nickelodeon;
@@ -2086,7 +2063,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
     }//GEN-LAST:event_addAmmountActionPerformed
 
     private void addDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDiaActionPerformed
-        int nuevo = Integer.parseInt(dia.getText())+1;
+        int nuevo = Integer.parseInt(dia.getText())+1000;
         dia.setText(String.valueOf(nuevo));
     }//GEN-LAST:event_addDiaActionPerformed
 
@@ -2094,7 +2071,7 @@ public class PruebaTabbed extends javax.swing.JFrame {
         if(Integer.parseInt(dia.getText())==2000){
             JOptionPane.showMessageDialog(null, "EL DIA DEBE DURAR MINIMO 2000MS");
         } else {
-            int nuevo = Integer.parseInt(dia.getText())-1;
+            int nuevo = Integer.parseInt(dia.getText())-1000;
             dia.setText(String.valueOf(nuevo));
         }
     }//GEN-LAST:event_removeDiaActionPerformed

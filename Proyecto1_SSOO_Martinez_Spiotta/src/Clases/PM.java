@@ -22,7 +22,6 @@ public class PM extends Thread{
     private int fault;
     private int discounted;
     private String status;
-    // private atributo deadline 
     private int hoursCounter;
     private int minutesCounter;
     private int daysPassedTotal; // solo para el pm, que el lo cambie 
@@ -39,8 +38,6 @@ public class PM extends Thread{
         this.salary = 40;
         this.fault = 0;
         this.discounted = 0;
-        this.hoursCounter = 0;
-        this.minutesCounter = 0;
         this.daysPassedTotal = 0;
         this.status = "Viendo One Piece (anime)";
         this.mutex = mutex;
@@ -123,17 +120,6 @@ public class PM extends Thread{
         
     }
     
-    
-    
-//    public void check(){
-//        try {
-//            this.mutex.acquire(); //wait
-//            // chequea deadline ; //critica
-//            this.mutex.release(); // signal
-//        } catch (InterruptedException ex) {
-//            Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
 
     public float getSalaryAcumulate() {
         return salaryAcumulate;
