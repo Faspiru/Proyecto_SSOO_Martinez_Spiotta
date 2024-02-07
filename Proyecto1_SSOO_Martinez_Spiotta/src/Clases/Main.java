@@ -4,7 +4,7 @@
  */
 package Clases;
 
-import Interfaces.PruebaTabbed;
+import Interfaces.MainInterface;
 import java.awt.TextField;
 import java.io.File;
 import java.io.FileReader;
@@ -100,7 +100,7 @@ public class Main {
 
             Company disney = new Company(necessitiesD, daysToFinoshD, initialQuantityD, 13, dayDuration, 250000, 600000, deadline);
 
-            PruebaTabbed main = new PruebaTabbed(nickelodeon, disney, initialQuantityNick, initialQuantityD);
+            MainInterface main = new MainInterface(nickelodeon, disney, initialQuantityNick, initialQuantityD);
             main.show();
 
         } catch (Exception e){

@@ -121,6 +121,7 @@ public class Drive {
         }
         */
         
+        
         guiones -= (necessities[0]*quantityChapters);
         this.labels[0].setText(Integer.toString(this.getGuiones()));
         escenarios -= (necessities[1]*quantityChapters);
@@ -136,8 +137,7 @@ public class Drive {
             guionPlotTwist -= necessities[4];
             counterForPT -= necessities[5];
             quantityChapters -= 1;
-        }
-        
+        }        
         this.labels[4].setText(Integer.toString(this.getGuionPlotTwist()));
         capitulos += quantityChapters;
         counterForPT += quantityChapters;

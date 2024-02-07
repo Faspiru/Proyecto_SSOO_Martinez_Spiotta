@@ -4,7 +4,7 @@
  */
 package Clases;
 
-import Interfaces.PruebaTabbed;
+import Interfaces.MainInterface;
 import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
 import java.util.logging.Level;
@@ -125,28 +125,6 @@ public class Company extends Thread{
             JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
         }
     }
-    
-//    @Override
-//    public void run(){
-//        while(true) {
-//            try {
-//                /// Funciones
-//                sleep(this.dayDuration); // Sleep??
-//            } catch (InterruptedException ex) {
-//                Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
-//            }
-//        }
-//    }
-    
-    
-    /// SI HILO -->
-    /// Funcion cantidad trabajador y tipo (acceder atributos de cada tipo)
-    /// Funcio cantidades de Drive
-    /// Funcion cantidad de capitulos y pt (acceder atributo capitulo y plotwist)
-    /// deadline ??
-    /// Funcion PM y Director status, faltas y descontado (acceder atributo)
-    /// Funcion ganancias, costos, utilidad
-    
 
     public Worker getGuionistas() {
         return guionistas;
